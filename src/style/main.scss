@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Acherus Grotesque';
+  src: url('../assets/fonts/acherus-grotesque.woff');
+}
+
+@font-face {
+  font-family: 'Acherus Grotesque Italic';
+  src: url('../assets/fonts/acherus-grotesque-italic.woff');
+}
+
+body{
+  font-family: 'Acherus Grotesque';
+  color: #c9d1d9;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117;
+}
+
+.logo-dev {
+  width: 45px;
+  margin-right: 5px;
+  filter: invert(91%) sepia(10%) saturate(191%) hue-rotate(169deg) brightness(93%) contrast(87%);
+}
+
+.navbar {
+  background-color: #161b22;
+  padding: 10px;
+  border-bottom: 1px solid rgba(121, 126, 131, 0.55);
+}
+
+nav a{
+  text-decoration: none;
+  color: #c9d1d9;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px 5px 0px 5px;
+}
+
+nav a:hover{
+  color: #80858b;
+}
