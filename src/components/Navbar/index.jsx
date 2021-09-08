@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom';
-import devLogo from 'assets/images/dev.svg';
-
 const Navbar=()=>(
   <nav className="navbar">
-    <Link to="/"><img className="logo-dev" src={devLogo} alt="Logo React"/></Link>
-    <Link to="/about">About</Link>
+    <div>
+      <h1>Benjamin Anezo</h1>
+    </div>
+
   </nav>
 );
 
