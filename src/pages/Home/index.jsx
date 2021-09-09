@@ -5,17 +5,23 @@ import twitter from 'assets/images/twitter.svg';
 
 const Home=()=>{
   return(
-    <>
-      <img className=""
-       src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
-       alt="Me?"/>
+    <div className="columns">
+    <div></div>
+    <div>
       <div>
+        <img className="me"
+         src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+         alt="Me?"/>
+      </div>
+
         <p>Developpeur fullstack junior</p>
+        <div>
         <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo-dev" src={codepen} /></a>
         <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo-dev" src={github} /></a>
         <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="kinkedin" className="logo-dev" src={linkedin} /></a>
         <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo-dev" src={twitter} /></a>
       </div>
+
       <div>
         <h2>A propos</h2>
         <p>
@@ -25,23 +31,55 @@ const Home=()=>{
           Je m'efforce donc depuis cette formation d'apprendre de nouvelles choses en permanance.
         </p>
       </div>
+
       <div>
         <h2>Mes compétences</h2>
         <li>HTML</li>
+        <meter id="HTML"
+         min="0" max="100"
+         value="50">
+        </meter>
         <li>CSS</li>
+        <meter id="CSS"
+         min="0" max="100"
+         value="50">
+        </meter>
         <li>Javascript</li>
+        <meter id="Javascript"
+         min="0" max="100"
+         value="50">
+        </meter>
         <li>GraphQL</li>
+        <meter id="GraphQL"
+         min="0" max="100"
+         value="50">
+        </meter>
         <li>React</li>
+        <meter id="React"
+         min="0" max="100"
+         value="50">
+        </meter>
         <li>React Native</li>
+        <meter id="React Native"
+         min="0" max="100"
+         value="50">
+        </meter>
       </div>
+
       <div>
         <h2>Mes Réalisations</h2>
-
+        <div>Projet 1</div>
+        <div>Projet 2</div>
+        <div>Projet 3</div>
       </div>
+
       <footer>
         <p>footer</p>
       </footer>
-    </>
+
+      </div>
+      <div></div>
+    </div>
   )
 };
 export default Home;
