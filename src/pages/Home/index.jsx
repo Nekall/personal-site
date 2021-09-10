@@ -16,10 +16,10 @@ const Home=()=>{
 
         <p>Developpeur fullstack junior</p>
         <div>
-        <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo-dev" src={codepen} /></a>
-        <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo-dev" src={github} /></a>
-        <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="kinkedin" className="logo-dev" src={linkedin} /></a>
-        <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo-dev" src={twitter} /></a>
+        <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo" src={codepen} /></a>
+        <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo" src={github} /></a>
+        <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="kinkedin" className="logo" src={linkedin} /></a>
+        <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo" src={twitter} /></a>
       </div>
 
       <div>
@@ -34,23 +34,8 @@ const Home=()=>{
 
       <div>
         <h2>Mes compétences</h2>
-        <li>HTML</li>
-        <meter id="HTML"
-         min="0" max="100"
-         value="50">
-        </meter>
-        <li>CSS</li>
-        <meter id="CSS"
-         min="0" max="100"
-         value="50">
-        </meter>
         <li>Javascript</li>
         <meter id="Javascript"
-         min="0" max="100"
-         value="50">
-        </meter>
-        <li>GraphQL</li>
-        <meter id="GraphQL"
          min="0" max="100"
          value="50">
         </meter>
@@ -58,6 +43,11 @@ const Home=()=>{
         <meter id="React"
          min="0" max="100"
          value="50">
+        </meter>
+        <li>GraphQL</li>
+        <meter id="GraphQL"
+        min="0" max="100"
+        value="50">
         </meter>
         <li>React Native</li>
         <meter id="React Native"

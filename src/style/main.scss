@@ -10,23 +10,25 @@
 
 body{
   font-family: 'Acherus Grotesque';
-  color: #c9d1d9;
+  color: #000000;
   margin: 0;
   padding: 0;
-  background-color: #0d1117;
+  background-color: #ffffff;
     text-align: center;
 }
 
-.logo-dev {
+.logo {
   width: 45px;
   margin-right: 5px;
   filter: invert(91%) sepia(10%) saturate(191%) hue-rotate(169deg) brightness(93%) contrast(87%);
+  &:hover{
+    opacity: 0.5;
+  }
 }
 
 .navbar {
-  background-color: #161b22;
   padding: 10px;
-  border-bottom: 1px solid rgba(121, 126, 131, 0.55);
+  text-align: left;
 }
 
 nav a{
