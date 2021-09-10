@@ -37,34 +37,38 @@ const Home=()=>{
         <li>Javascript</li>
         <meter id="Javascript"
          min="0" max="100"
-         value="50">
+         value="60">
         </meter>
         <li>React</li>
         <meter id="React"
+         min="0" max="100"
+         value="55">
+        </meter>
+        <li>Ruby On Rails</li>
+        <meter id="React Native"
          min="0" max="100"
          value="50">
         </meter>
         <li>GraphQL</li>
         <meter id="GraphQL"
         min="0" max="100"
-        value="50">
+        value="10">
         </meter>
         <li>React Native</li>
         <meter id="React Native"
          min="0" max="100"
-         value="50">
+         value="10">
         </meter>
       </div>
 
       <div>
         <h2>Mes Réalisations</h2>
-        <div>Projet 1</div>
-        <div>Projet 2</div>
-        <div>Projet 3</div>
+        <div>Notaciné</div>
+        <div>Ronincode</div>
       </div>
 
       <footer>
-        <p>footer</p>
+        <p>~</p>
       </footer>
 
       </div>
