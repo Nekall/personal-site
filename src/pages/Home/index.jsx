@@ -15,12 +15,12 @@ const Home=()=>{
       </div>
 
         <p>Developpeur fullstack junior</p>
-        <div>
+
         <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo" src={codepen} /></a>
         <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo" src={github} /></a>
         <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="kinkedin" className="logo" src={linkedin} /></a>
         <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo" src={twitter} /></a>
-      </div>
+
 
       <div>
         <h2>A propos</h2>
@@ -59,12 +59,42 @@ const Home=()=>{
          min="0" max="100"
          value="10">
         </meter>
+        <li>Nodejs</li>
+        <meter id="React Native"
+         min="0" max="100"
+         value="0">
+        </meter>
+      </div>
+
+      <div>
+        <h2>Formation</h2>
+        <div>THP</div>
+        <div>Le début de l'aventure...</div>
+      </div>
+
+      <div>
+      <h2>Mes compétences</h2>
+      <li> Choisir les bonnes technologies à utiliser</li>
+      <li> Développer des applications web pour des besoins spécifiques</li>
+      <li> Adaptation rapide à de nouveaux langages et technologies</li>
+      <li> Capacité d’analyse et de résolution de problème</li>
+      <li> Évolution et maintenance de sites et d’applications</li>
+      <li> Développement Fullstack (Frontend et Backend)</li>
       </div>
 
       <div>
         <h2>Mes Réalisations</h2>
         <div>Notaciné</div>
         <div>Ronincode</div>
+      </div>
+
+
+      <div>
+        <h2>Contact</h2>
+        <li className="bold">Ville</li>
+        <li>Paris</li>
+        <li className="bold">Adresse Mail</li>
+        <li>contact@neka.dev</li>
       </div>
 
       <footer>
