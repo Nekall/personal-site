@@ -8,6 +8,12 @@
   src: url('../assets/fonts/poppins-black.ttf');
 }
 
+@font-face {
+  font-family: 'Poppins Semibold';
+  src: url('../assets/fonts/poppins-semibold.ttf');
+}
+
+
 body{
   font-family: 'Acherus Grotesque';
   color: #ffffff;
@@ -15,13 +21,13 @@ body{
   padding: 0;
   background-color: #000000;
   text-align: center;
-  display: flex;
+  font-size: 1.1rem;
 }
 
 .columns{
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  gap: 10px; //pour créer des espaces entre les colomns
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 //#### TOOLS ####
@@ -30,8 +36,10 @@ body{
 }
 
 .title{
-  color: lightcyan;
+  font-family: 'Poppins Semibold';
 }
+
+
 //###############
 
 //#### Social ####
@@ -78,12 +86,23 @@ footer{
   font-family: 'Acherus Grotesque';
   font-size: 0.8rem;
   position: absolute;
-  top: 100px;
+  top: 102px;
   left: 225px;
 }
 
-//#### Photo ####
+.name{
+  position: absolute;
+  &.front-name{
+    color: #000000;
+    font-size: 1rem;
+    -webkit-text-stroke: 2px #ffffff;
+    font-size: 2.33rem;
+    margin-left: 5px;
+    padding-bottom: 1px;
+  }
+}
 
+//#### Photo ####
 .photo{
   border: solid aquamarine 1px;
   display: flex;
@@ -113,8 +132,6 @@ footer{
   clip-path: circle(57.84% at 49.00% 47.35%);
 }
 
-
-
 .background{
   border-radius: 50%;
   width: 250px;
@@ -131,6 +148,12 @@ footer{
 //#### Compétences ####
 .skills{
   border: solid orange 1px;
+}
+
+.techno-logo{
+  width: 40px;
+  height: 40px;
+  filter: invert(91%) sepia(10%) saturate(191%) hue-rotate(169deg) brightness(93%) contrast(87%);
 }
 
 //#### Savoir-Faire ####
@@ -153,8 +176,12 @@ footer{
   border: solid red 1px;
 }
 
+.logo-contact{
+  width: 40px;
+  filter: invert(95%) sepia(0%) saturate(19%) hue-rotate(347deg) brightness(105%) contrast(106%);
+}
+
 .contact-columns{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
 }

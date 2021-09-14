@@ -1,18 +1,28 @@
-import codepen from 'assets/images/codepen.svg';
-import github from 'assets/images/github.svg';
-import linkedin from 'assets/images/linkedin.svg';
-import twitter from 'assets/images/twitter.svg';
-import me from "../../assets/images/me.png";
 import background from "../../assets/images/pexels-anni-roenkae-4175070.jpg";
+import adobephotoshop from "../../assets/images/adobephotoshop.svg";
+import rubyonrails from "../../assets/images/rubyonrails.svg";
+import javascript from "../../assets/images/javascript.svg";
+import location from "../../assets/images/location.svg";
+import graphql from "../../assets/images/graphql.svg";
+import linkedin from 'assets/images/linkedin.svg';
+import react from "../../assets/images/react.svg";
+import html5 from "../../assets/images/html5.svg";
+import codepen from 'assets/images/codepen.svg';
+import twitter from 'assets/images/twitter.svg';
+import mail from "../../assets/images/mail.svg";
+import css3 from "../../assets/images/css3.svg";
+import sass from "../../assets/images/sass.svg";
+import github from 'assets/images/github.svg';
+import me from "../../assets/images/me.png";
+
 
 const Home=()=>{
   return(
     <div className="columns">
-    <div></div>
     <div>
       <div className="photo">
         <img className="background" src={background} alt="background"/>
-        <img className="me" src={me} alt="Me?"/>
+        <img className="me" src={me} alt="me"/>
       </div>
       <div className="social">
         <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo codepen" src={codepen} /></a>
@@ -33,35 +43,35 @@ const Home=()=>{
 
       <div className="skills">
         <h2 className="title">Mes compétences</h2>
-        <li>Javascript</li>
-        <meter id="Javascript"
+        <p>Javascript</p>
+        <img className="techno-logo javascript" src={javascript} alt="javascript"/>
+        <meter id="React"
          min="0" max="100"
-         value="60">
+         value="65">
         </meter>
-        <li>React</li>
+        <p>React</p>
+        <img className="techno-logo react" src={react} alt="react"/>
         <meter id="React"
          min="0" max="100"
          value="55">
         </meter>
-        <li>Ruby On Rails</li>
+        <p>Ruby On Rails</p>
+        <img className="techno-logo rubyonrails" src={rubyonrails} alt="rubyonrails"/>
         <meter id="React Native"
          min="0" max="100"
          value="50">
         </meter>
-        <li>GraphQL</li>
+        <p>GraphQL</p>
+        <img className="techno-logo graphql" src={graphql} alt="graphql"/>
         <meter id="GraphQL"
         min="0" max="100"
         value="10">
         </meter>
-        <li>React Native</li>
+        <p>React Native</p>
+        <img className="techno-logo react" src={react} alt="react native"/>
         <meter id="React Native"
          min="0" max="100"
          value="10">
-        </meter>
-        <li>Nodejs</li>
-        <meter id="React Native"
-         min="0" max="100"
-         value="0">
         </meter>
       </div>
 
@@ -91,19 +101,22 @@ const Home=()=>{
       <div className="contact">
         <h2 className="title">Contact</h2>
         <div className="contact-columns">
-          <li className="bold">Ville</li>
-          <li>Paris</li>
-          <li className="bold">Adresse Mail</li>
-          <li>contact@neka.dev</li>
+          <div>
+            <img className="logo-contact" src={location} alt="localisation"/>
+            <p>Paris</p>
+          </div>
+          <div>
+            <img className="logo-contact" src={mail} alt="mail"/>
+            <p>contact@neka.dev</p>
+          </div>
         </div>
       </div>
 
       <footer>
-        <p>~</p>
+        <p>Site créé par Benjamin Anezo avec ♥</p>
       </footer>
 
       </div>
-      <div></div>
     </div>
   )
 };
