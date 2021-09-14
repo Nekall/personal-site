@@ -4,50 +4,18 @@
 }
 
 @font-face {
-  font-family: 'Acherus Grotesque Italic';
-  src: url('../assets/fonts/acherus-grotesque-italic.woff');
+  font-family: 'Poppins Black';
+  src: url('../assets/fonts/poppins-black.ttf');
 }
 
 body{
   font-family: 'Acherus Grotesque';
-  color: #000000;
+  color: #ffffff;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-    text-align: center;
-}
-
-.logo {
-  width: 45px;
-  margin-right: 5px;
-  filter: invert(91%) sepia(10%) saturate(191%) hue-rotate(169deg) brightness(93%) contrast(87%);
-  &:hover{
-    opacity: 0.5;
-  }
-}
-
-.navbar {
-  padding: 10px;
-  text-align: left;
-}
-
-nav a{
-  text-decoration: none;
-  color: #c9d1d9;
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0px 5px 0px 5px;
-}
-
-nav a:hover{
-  color: #80858b;
-}
-
-.me{
-  width: 30%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #000000;
+  text-align: center;
+  display: flex;
 }
 
 .columns{
@@ -56,6 +24,137 @@ nav a:hover{
   gap: 10px; //pour créer des espaces entre les colomns
 }
 
+//#### TOOLS ####
 .bold{
   font-weight: bold;
+}
+
+.title{
+  color: lightcyan;
+}
+//###############
+
+//#### Social ####
+.social{
+  border: solid indigo 1px;
+}
+
+footer{
+  border: solid blue 1px;
+}
+
+.logo {
+  width: 45px;
+  margin-right: 5px;
+  filter: invert(91%) sepia(10%) saturate(191%) hue-rotate(169deg) brightness(93%) contrast(87%);
+
+  &.linkedin:hover{
+    filter: invert(24%) sepia(78%) saturate(2189%) hue-rotate(197deg) brightness(95%) contrast(92%);
+  }
+
+  &.twitter:hover{
+    filter: invert(74%) sepia(76%) saturate(5194%) hue-rotate(179deg) brightness(93%) contrast(104%);
+  }
+
+  &.codepen:hover{
+    filter: invert(55%) sepia(4%) saturate(48%) hue-rotate(75deg) brightness(91%) contrast(74%);
+  }
+
+  &.github:hover{
+    filter: invert(47%) sepia(13%) saturate(3683%) hue-rotate(326deg) brightness(91%) contrast(107%);
+  }
+}
+
+//#### Navbar ####
+.navbar{
+  border: solid fuchsia 1px;
+  font-family: 'Poppins Black';
+  font-size: 1.5rem;
+  padding: 30px 0px 30px 100px;
+  text-align: left;
+}
+
+.note{
+  font-family: 'Acherus Grotesque';
+  font-size: 0.8rem;
+  position: absolute;
+  top: 100px;
+  left: 225px;
+}
+
+//#### Photo ####
+
+.photo{
+  border: solid aquamarine 1px;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo:hover .me, .photo:hover .background{
+  &.me{
+    transform: translateY(30px) scale(1.3);
+    transform-origin: 30% bottom;
+    clip-path: circle(55.23% at 44.38% 48.27%);
+  }
+
+  &.background{
+    transform: scale(1.2)
+  }
+}
+
+.me{
+  width: 200px;
+  transition: 0.5s;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  clip-path: circle(57.84% at 49.00% 47.35%);
+}
+
+
+
+.background{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  transition: 0.4s;
+}
+
+
+//#### Projets ####
+.projects{
+  border: solid deeppink 1px;
+}
+
+//#### Compétences ####
+.skills{
+  border: solid orange 1px;
+}
+
+//#### Savoir-Faire ####
+.about{
+  border: solid darkorchid 1px;
+}
+
+//#### Speech ####
+.speech{
+  border: solid green 1px;
+}
+
+//#### Savoir-faire ####
+.expertise{
+  border: solid yellow 1px;
+}
+
+//#### CONTACT ####
+.contact{
+  border: solid red 1px;
+}
+
+.contact-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }

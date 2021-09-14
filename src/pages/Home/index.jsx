@@ -2,28 +2,27 @@ import codepen from 'assets/images/codepen.svg';
 import github from 'assets/images/github.svg';
 import linkedin from 'assets/images/linkedin.svg';
 import twitter from 'assets/images/twitter.svg';
+import me from "../../assets/images/me.png";
+import background from "../../assets/images/pexels-anni-roenkae-4175070.jpg";
 
 const Home=()=>{
   return(
     <div className="columns">
     <div></div>
     <div>
-      <div>
-        <img className="me"
-         src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
-         alt="Me?"/>
+      <div className="photo">
+        <img className="background" src={background} alt="background"/>
+        <img className="me" src={me} alt="Me?"/>
+      </div>
+      <div className="social">
+        <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo codepen" src={codepen} /></a>
+        <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo github" src={github} /></a>
+        <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="linkedin" className="logo linkedin" src={linkedin} /></a>
+        <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo twitter" src={twitter} /></a>
       </div>
 
-        <p>Developpeur fullstack junior</p>
-
-        <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo" src={codepen} /></a>
-        <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo" src={github} /></a>
-        <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="kinkedin" className="logo" src={linkedin} /></a>
-        <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo" src={twitter} /></a>
-
-
-      <div>
-        <h2>A propos</h2>
+      <div className="about">
+        <h2 className="title">A propos</h2>
         <p>
           Cela fait des années que le monde du développement informatique m'attire.
           En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant
@@ -32,8 +31,8 @@ const Home=()=>{
         </p>
       </div>
 
-      <div>
-        <h2>Mes compétences</h2>
+      <div className="skills">
+        <h2 className="title">Mes compétences</h2>
         <li>Javascript</li>
         <meter id="Javascript"
          min="0" max="100"
@@ -66,14 +65,14 @@ const Home=()=>{
         </meter>
       </div>
 
-      <div>
-        <h2>Formation</h2>
+      <div className="speech">
+        <h2 className="title">Formation</h2>
         <div>THP</div>
         <div>Le début de l'aventure...</div>
       </div>
 
-      <div>
-      <h2>Mes compétences</h2>
+      <div className="expertise">
+      <h2 className="title">Savoir-faire</h2>
       <li> Choisir les bonnes technologies à utiliser</li>
       <li> Développer des applications web pour des besoins spécifiques</li>
       <li> Adaptation rapide à de nouveaux langages et technologies</li>
@@ -82,19 +81,21 @@ const Home=()=>{
       <li> Développement Fullstack (Frontend et Backend)</li>
       </div>
 
-      <div>
-        <h2>Mes Réalisations</h2>
+      <div className="projects">
+        <h2 className="title">Mes Réalisations</h2>
         <div>Notaciné</div>
         <div>Ronincode</div>
       </div>
 
 
-      <div>
-        <h2>Contact</h2>
-        <li className="bold">Ville</li>
-        <li>Paris</li>
-        <li className="bold">Adresse Mail</li>
-        <li>contact@neka.dev</li>
+      <div className="contact">
+        <h2 className="title">Contact</h2>
+        <div className="contact-columns">
+          <li className="bold">Ville</li>
+          <li>Paris</li>
+          <li className="bold">Adresse Mail</li>
+          <li>contact@neka.dev</li>
+        </div>
       </div>
 
       <footer>
