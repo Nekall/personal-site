@@ -17,6 +17,10 @@
 
 html{
   scroll-behavior: smooth;
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari & Opéra */
+  -ms-user-select: none; /* Internet & Edge */
+  user-select: none; /* Standard */
 }
 
 body{
@@ -184,6 +188,15 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.roninlogo, .notalogo{
+  width: 100px;
+}
+
+.notacine, .ronincode{
+  width: 600px;
+}
+
 
 //#### Compétences ####
 .skills{

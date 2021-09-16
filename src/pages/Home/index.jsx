@@ -15,6 +15,11 @@ import sass from "../../assets/images/sass.svg";
 import github from 'assets/images/github.svg';
 import me from "../../assets/images/me.png";
 
+import roninlogo from "../../assets/images/ronincode-logo.jpg";
+import ronincode from "../../assets/images/ronincode-screen.jpg";
+import notalogo from "../../assets/images/notacine-logo.jpg";
+import notacine from "../../assets/images/notacine-screen.jpg";
+
 
 const Home=()=>{
 
@@ -108,8 +113,16 @@ const Home=()=>{
           <h2 className="title">Mes Réalisations</h2>
         </div>
         <div className="projects-columns">
-          <div>Notaciné</div>
-          <div>Ronincode</div>
+          <div>
+            <div>Notaciné</div>
+            <img className="roninlogo" src={roninlogo} alt="roninlogo"/>
+            <img className="ronincode" src={ronincode} alt="ronincode"/>
+          </div>
+          <div>
+            <div>Ronincode</div>
+            <img className="notalogo" src={notalogo} alt="notalogo"/>
+            <img className="notacine" src={notacine} alt="notacine"/>
+          </div>
         </div>
       </div>
 
