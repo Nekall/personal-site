@@ -5,7 +5,12 @@ const Navbar=()=>(
       <p className="name front-name">Benjamin Anezo</p>
       <p className="bold note">DEVELOPPEUR FULLSTACK JUNIOR</p>
     </div>
-
+    <div className="anchors">
+      <a href="#competences">competences</a>
+      <a href="#formation">formation</a>
+      <a href="#projects">pojects</a>
+      <a href="#contact">contact</a>
+    </div>
   </nav>
 );
 

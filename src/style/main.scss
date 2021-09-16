@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 @font-face {
   font-family: 'Acherus Grotesque';
   src: url('../assets/fonts/acherus-grotesque.woff');
@@ -13,18 +15,22 @@
   src: url('../assets/fonts/poppins-semibold.ttf');
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 body{
   font-family: 'Acherus Grotesque';
-  color: #ffffff;
+  color: $color-white;
   margin: 0;
   padding: 0;
-  background-color: #000000;
+  background-color: $color-black;
   text-align: center;
   font-size: 1.1rem;
+  cursor: crosshair;
 }
 
-.columns{
+.container{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -37,9 +43,24 @@ body{
 
 .title{
   font-family: 'Poppins Semibold';
+  position: absolute;
+  font-size: 2rem;
+  padding-left: 20px;
+
+  &.shadow{
+    background: -webkit-linear-gradient($light-pink, $blue-lavender);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    margin-left: -5px;
+    padding-top: 2px;
+  }
 }
 
-
+.title-container{
+  width: 100%;
+  height: 100px;
+}
 //###############
 
 //#### Social ####
@@ -55,6 +76,7 @@ footer{
   width: 45px;
   margin-right: 5px;
   filter: invert(91%) sepia(10%) saturate(191%) hue-rotate(169deg) brightness(93%) contrast(87%);
+  transition: 0.5s;
 
   &.linkedin:hover{
     filter: invert(24%) sepia(78%) saturate(2189%) hue-rotate(197deg) brightness(95%) contrast(92%);
@@ -69,7 +91,7 @@ footer{
   }
 
   &.github:hover{
-    filter: invert(47%) sepia(13%) saturate(3683%) hue-rotate(326deg) brightness(91%) contrast(107%);
+    filter: invert(25%) sepia(24%) saturate(5961%) hue-rotate(226deg) brightness(81%) contrast(85%);
   }
 }
 
@@ -93,12 +115,26 @@ footer{
 .name{
   position: absolute;
   &.front-name{
-    color: #000000;
-    font-size: 1rem;
-    -webkit-text-stroke: 2px #ffffff;
+    color: $color-black;
+    -webkit-text-stroke: 2px $color-white;
     font-size: 2.33rem;
     margin-left: 5px;
     padding-bottom: 1px;
+  }
+}
+
+.anchors{
+  display: flex;
+  justify-content: flex-end;
+  & a{
+    color: $color-white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 6px;
+    border: dashed 2px $color-white;
+  }
+  & a:hover{
+    border: solid 2px $color-white;
   }
 }
 
@@ -139,10 +175,14 @@ footer{
   transition: 0.4s;
 }
 
-
 //#### Projets ####
 .projects{
   border: solid deeppink 1px;
+}
+
+.projects-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 //#### Compétences ####
@@ -150,15 +190,24 @@ footer{
   border: solid orange 1px;
 }
 
-.techno-logo{
-  width: 40px;
-  height: 40px;
-  filter: invert(91%) sepia(10%) saturate(191%) hue-rotate(169deg) brightness(93%) contrast(87%);
+.technos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-//#### Savoir-Faire ####
+.techno-logo{
+  width: 80px;
+  height: 80px;
+  filter: invert(91%) sepia(10%) saturate(191%) hue-rotate(169deg) brightness(93%) contrast(87%);
+  width: 100%;
+}
+
+//#### A propos ####
 .about{
   border: solid darkorchid 1px;
+  & p{
+    margin: 30px;
+  }
 }
 
 //#### Speech ####
@@ -177,11 +226,17 @@ footer{
 }
 
 .logo-contact{
-  width: 40px;
+  width: 80px;
   filter: invert(95%) sepia(0%) saturate(19%) hue-rotate(347deg) brightness(105%) contrast(106%);
 }
 
 .contact-columns{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+//#### FOOTER ####
+
+footer{
+
 }

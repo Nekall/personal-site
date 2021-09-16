@@ -17,13 +17,15 @@ import me from "../../assets/images/me.png";
 
 
 const Home=()=>{
+
   return(
-    <div className="columns">
-    <div>
+    <div className="container">
+
       <div className="photo">
         <img className="background" src={background} alt="background"/>
         <img className="me" src={me} alt="me"/>
       </div>
+
       <div className="social">
         <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo codepen" src={codepen} /></a>
         <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo github" src={github} /></a>
@@ -32,7 +34,11 @@ const Home=()=>{
       </div>
 
       <div className="about">
-        <h2 className="title">A propos</h2>
+        <div className="title-container">
+          <h2 className="title shadow">A propos</h2>
+          <h2 className="title">A propos</h2>
+        </div>
+
         <p>
           Cela fait des années que le monde du développement informatique m'attire.
           En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant
@@ -41,65 +47,79 @@ const Home=()=>{
         </p>
       </div>
 
-      <div className="skills">
-        <h2 className="title">Mes compétences</h2>
-        <p>Javascript</p>
-        <img className="techno-logo javascript" src={javascript} alt="javascript"/>
-        <meter id="React"
-         min="0" max="100"
-         value="65">
-        </meter>
-        <p>React</p>
-        <img className="techno-logo react" src={react} alt="react"/>
-        <meter id="React"
-         min="0" max="100"
-         value="55">
-        </meter>
-        <p>Ruby On Rails</p>
-        <img className="techno-logo rubyonrails" src={rubyonrails} alt="rubyonrails"/>
-        <meter id="React Native"
-         min="0" max="100"
-         value="50">
-        </meter>
-        <p>GraphQL</p>
-        <img className="techno-logo graphql" src={graphql} alt="graphql"/>
-        <meter id="GraphQL"
-        min="0" max="100"
-        value="10">
-        </meter>
-        <p>React Native</p>
-        <img className="techno-logo react" src={react} alt="react native"/>
-        <meter id="React Native"
-         min="0" max="100"
-         value="10">
-        </meter>
+      <div className="skills" id="competences">
+        <div className="title-container">
+          <h2 className="title shadow">Mes compétences</h2>
+          <h2 className="title">Mes compétences</h2>
+        </div>
+
+        <div className="technos">
+          <div>
+            <img className="techno-logo javascript" src={javascript} alt="javascript"/>
+            <meter id="React"
+             min="0" max="100"
+             value="65">
+            </meter>
+          </div>
+          <div>
+            <img className="techno-logo react" src={react} alt="react"/>
+            <meter id="React"
+            min="0" max="100"
+            value="55">
+            </meter>
+          </div>
+          <div>
+            <img className="techno-logo rubyonrails" src={rubyonrails} alt="rubyonrails"/>
+            <meter id="React Native"
+             min="0" max="100"
+             value="50">
+            </meter>
+          </div>
+        </div>
       </div>
 
-      <div className="speech">
-        <h2 className="title">Formation</h2>
-        <div>THP</div>
-        <div>Le début de l'aventure...</div>
+      <div className="speech" id="formation">
+        <div className="title-container">
+          <h2 className="title shadow">Formation</h2>
+          <h2 className="title">Formation</h2>
+        </div>
+
+        <p>THP</p>
+        <p>Le début de l'aventure...</p>
       </div>
 
       <div className="expertise">
-      <h2 className="title">Savoir-faire</h2>
-      <li> Choisir les bonnes technologies à utiliser</li>
-      <li> Développer des applications web pour des besoins spécifiques</li>
-      <li> Adaptation rapide à de nouveaux langages et technologies</li>
-      <li> Capacité d’analyse et de résolution de problème</li>
-      <li> Évolution et maintenance de sites et d’applications</li>
-      <li> Développement Fullstack (Frontend et Backend)</li>
+        <div className="title-container">
+          <h2 className="title shadow">Savoir-faire</h2>
+          <h2 className="title">Savoir-faire</h2>
+        </div>
+
+        <li> Choisir les bonnes technologies à utiliser</li>
+        <li> Développer des applications web pour des besoins spécifiques</li>
+        <li> Adaptation rapide à de nouveaux langages et technologies</li>
+        <li> Capacité d’analyse et de résolution de problème</li>
+        <li> Évolution et maintenance de sites et d’applications</li>
+        <li> Développement Fullstack (Frontend et Backend)</li>
       </div>
 
-      <div className="projects">
-        <h2 className="title">Mes Réalisations</h2>
-        <div>Notaciné</div>
-        <div>Ronincode</div>
+      <div className="projects" id="projects">
+        <div className="title-container">
+          <h2 className="title shadow">Mes Réalisations</h2>
+          <h2 className="title">Mes Réalisations</h2>
+        </div>
+        <div className="projects-columns">
+          <div>Notaciné</div>
+          <div>Ronincode</div>
+        </div>
       </div>
 
 
-      <div className="contact">
-        <h2 className="title">Contact</h2>
+      <div className="contact" id="contact">
+        <div className="title-container">
+          <h2 className="title shadow">Contact</h2>
+          <h2 className="title">Contact</h2>
+        </div>
+
         <div className="contact-columns">
           <div>
             <img className="logo-contact" src={location} alt="localisation"/>
@@ -116,7 +136,6 @@ const Home=()=>{
         <p>Site créé par Benjamin Anezo avec ♥</p>
       </footer>
 
-      </div>
     </div>
   )
 };
