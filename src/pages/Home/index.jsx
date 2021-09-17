@@ -1,10 +1,13 @@
 import background from "../../assets/images/pexels-anni-roenkae-4175070.jpg";
 import adobephotoshop from "../../assets/images/adobephotoshop.svg";
+import ronincode from "../../assets/images/ronincode-screen.jpg";
+import roninlogo from "../../assets/images/ronincode-logo.jpg";
+import notacine from "../../assets/images/notacine-screen.jpg";
 import rubyonrails from "../../assets/images/rubyonrails.svg";
+import notalogo from "../../assets/images/notacine-logo.jpg";
 import javascript from "../../assets/images/javascript.svg";
 import download from "../../assets/images/download.svg";
 import location from "../../assets/images/location.svg";
-import graphql from "../../assets/images/graphql.svg";
 import linkedin from 'assets/images/linkedin.svg';
 import react from "../../assets/images/react.svg";
 import html5 from "../../assets/images/html5.svg";
@@ -16,10 +19,6 @@ import sass from "../../assets/images/sass.svg";
 import github from 'assets/images/github.svg';
 import me from "../../assets/images/me.png";
 
-import roninlogo from "../../assets/images/ronincode-logo.jpg";
-import ronincode from "../../assets/images/ronincode-screen.jpg";
-import notalogo from "../../assets/images/notacine-logo.jpg";
-import notacine from "../../assets/images/notacine-screen.jpg";
 
 
 const Home=()=>{
@@ -33,11 +32,12 @@ const Home=()=>{
       </div>
 
       <div className="social">
+      <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo github" src={github} /></a>
+      <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="linkedin" className="logo linkedin" src={linkedin} /></a>
         <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo codepen" src={codepen} /></a>
-        <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo github" src={github} /></a>
-        <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="linkedin" className="logo linkedin" src={linkedin} /></a>
         <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo twitter" src={twitter} /></a>
       </div>
+
       <a className="btn-download" href="cv.pdf" download>Télécharger mon CV</a>
 
       <div className="about">
@@ -63,6 +63,7 @@ const Home=()=>{
             <img className="techno-logo javascript" src={javascript} alt="javascript"/>
             <img className="techno-logo react" src={react} alt="react"/>
             <img className="techno-logo rubyonrails" src={rubyonrails} alt="rubyonrails"/>
+            <img className="techno-logo sass" src={sass} alt="sass"/>
         </div>
       </div>
 
@@ -72,7 +73,7 @@ const Home=()=>{
           <h2 className="title">Formation</h2>
         </div>
         <div className="formation">
-          <h3>2021</h3>
+          <p>2021</p>
           <p>THP</p>
           <p>Le début de l'aventure...</p>
         </div>
@@ -138,7 +139,7 @@ const Home=()=>{
 
       <footer>
         <div></div>
-        <p>Site créé par Benjamin Anezo avec <span>♥</span></p>
+        <p>Site créé par Benjamin avec <span>♥</span></p>
       </footer>
 
     </div>

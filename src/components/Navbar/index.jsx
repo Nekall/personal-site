@@ -8,7 +8,7 @@ const Navbar=()=>(
     <div className="anchors">
       <a href="#competences">competences</a>
       <a href="#formation">formation</a>
-      <a href="#projects">pojects</a>
+      <a href="#projects">projets</a>
       <a href="#contact">contact</a>
     </div>
   </nav>
