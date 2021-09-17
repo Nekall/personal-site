@@ -1,0 +1,12 @@
+.contact{
+  & .logo-contact{
+    width: 60px;
+    filter: invert(95%) sepia(0%) saturate(19%) hue-rotate(347deg) brightness(105%) contrast(106%);
+  }
+
+  & .contact-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,28 @@
+//#### Social ####
+.social{
+  border: solid indigo 1px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 45px;
+  margin-right: 5px;
+  filter: invert(91%) sepia(10%) saturate(191%) hue-rotate(169deg) brightness(93%) contrast(87%);
+  transition: 0.5s;
+
+  &.linkedin:hover{
+    filter: invert(24%) sepia(78%) saturate(2189%) hue-rotate(197deg) brightness(95%) contrast(92%);
+  }
+
+  &.twitter:hover{
+    filter: invert(74%) sepia(76%) saturate(5194%) hue-rotate(179deg) brightness(93%) contrast(104%);
+  }
+
+  &.codepen:hover{
+    filter: invert(55%) sepia(4%) saturate(48%) hue-rotate(75deg) brightness(91%) contrast(74%);
+  }
+
+  &.github:hover{
+    filter: invert(25%) sepia(24%) saturate(5961%) hue-rotate(226deg) brightness(81%) contrast(85%);
+  }
+}

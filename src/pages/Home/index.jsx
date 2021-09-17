@@ -2,6 +2,7 @@ import background from "../../assets/images/pexels-anni-roenkae-4175070.jpg";
 import adobephotoshop from "../../assets/images/adobephotoshop.svg";
 import rubyonrails from "../../assets/images/rubyonrails.svg";
 import javascript from "../../assets/images/javascript.svg";
+import download from "../../assets/images/download.svg";
 import location from "../../assets/images/location.svg";
 import graphql from "../../assets/images/graphql.svg";
 import linkedin from 'assets/images/linkedin.svg';
@@ -37,6 +38,7 @@ const Home=()=>{
         <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="linkedin" className="logo linkedin" src={linkedin} /></a>
         <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo twitter" src={twitter} /></a>
       </div>
+      <a className="btn-download" href="cv.pdf" download>Télécharger mon CV</a>
 
       <div className="about">
         <div className="title-container">
@@ -57,54 +59,39 @@ const Home=()=>{
           <h2 className="title shadow">Mes compétences</h2>
           <h2 className="title">Mes compétences</h2>
         </div>
-
         <div className="technos">
-          <div>
             <img className="techno-logo javascript" src={javascript} alt="javascript"/>
-            <meter id="React"
-             min="0" max="100"
-             value="65">
-            </meter>
-          </div>
-          <div>
             <img className="techno-logo react" src={react} alt="react"/>
-            <meter id="React"
-            min="0" max="100"
-            value="55">
-            </meter>
-          </div>
-          <div>
             <img className="techno-logo rubyonrails" src={rubyonrails} alt="rubyonrails"/>
-            <meter id="React Native"
-             min="0" max="100"
-             value="50">
-            </meter>
-          </div>
         </div>
       </div>
 
-      <div className="speech" id="formation">
+      <div id="formation">
         <div className="title-container">
           <h2 className="title shadow">Formation</h2>
           <h2 className="title">Formation</h2>
         </div>
-
-        <p>THP</p>
-        <p>Le début de l'aventure...</p>
+        <div className="formation">
+          <h3>2021</h3>
+          <p>THP</p>
+          <p>Le début de l'aventure...</p>
+        </div>
       </div>
 
-      <div className="expertise">
+      <div>
         <div className="title-container">
           <h2 className="title shadow">Savoir-faire</h2>
           <h2 className="title">Savoir-faire</h2>
         </div>
-
-        <li> Choisir les bonnes technologies à utiliser</li>
-        <li> Développer des applications web pour des besoins spécifiques</li>
-        <li> Adaptation rapide à de nouveaux langages et technologies</li>
-        <li> Capacité d’analyse et de résolution de problème</li>
-        <li> Évolution et maintenance de sites et d’applications</li>
-        <li> Développement Fullstack (Frontend et Backend)</li>
+        <div className="expertise-list">
+          <li> Choisir les bonnes technologies à utiliser</li>
+          <li> Développer des applications web pour des besoins spécifiques</li>
+          <li> Adaptation rapide à de nouveaux langages et technologies</li>
+          <li> Capacité d’analyse et de résolution de problème</li>
+          <li> Évolution et maintenance de sites et d’applications</li>
+          <li> Développement Fullstack (Frontend et Backend)</li>
+          <li> Responsive design</li>
+        </div>
       </div>
 
       <div className="projects" id="projects">
@@ -139,6 +126,10 @@ const Home=()=>{
             <p>Paris</p>
           </div>
           <div>
+            <img className="logo-contact" src={download} alt="téléchargement du cv"/>
+            <p><a href="cv.pdf" download>Curriculum vitæ</a></p>
+          </div>
+          <div>
             <img className="logo-contact" src={mail} alt="mail"/>
             <p>contact@neka.dev</p>
           </div>
@@ -146,7 +137,8 @@ const Home=()=>{
       </div>
 
       <footer>
-        <p>Site créé par Benjamin Anezo avec ♥</p>
+        <div></div>
+        <p>Site créé par Benjamin Anezo avec <span>♥</span></p>
       </footer>
 
     </div>

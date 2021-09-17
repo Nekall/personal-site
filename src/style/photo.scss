@@ -1,0 +1,36 @@
+//#### Photo ####
+.photo{
+  border: solid aquamarine 1px;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo:hover .me, .photo:hover .background{
+  &.me{
+    transform: translateY(30px) scale(1.3);
+    transform-origin: 30% bottom;
+    clip-path: circle(54.87% at 44.38% 48.27%);
+  }
+
+  &.background{
+    transform: scale(1.2)
+  }
+}
+
+.me{
+  width: 205px;
+  transition: 0.5s;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  clip-path: circle(57.84% at 49% 47.5%);
+}
+
+.background{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  transition: 0.4s;
+}

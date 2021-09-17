@@ -1,10 +1,9 @@
-import React from "react";
-import ReactDOM from 'react-dom';
-import './style/main.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from 'pages/Home'
-import About from 'pages/About'
 import Navbar from 'components/Navbar';
+import ReactDOM from 'react-dom';
+import Home from 'pages/Home';
+import './style/main.scss';
+import React from "react";
 
 const App=()=>{
   return (
@@ -15,9 +14,6 @@ const App=()=>{
           <Switch>
             <Route path="/" exact>
               <Home />
-            </Route>
-            <Route path="/about">
-              <About />
             </Route>
           </Switch>
         </main>

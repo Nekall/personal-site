@@ -1,0 +1,21 @@
+.projects{
+  border: solid deeppink 1px;
+}
+
+.projects-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.roninlogo, .notalogo{
+  width: 100px;
+}
+
+.notacine, .ronincode{
+  cursor: zoom-in;
+  width: 600px;
+  &:active{
+    transform: scale(1.6);
+    transition: 0.7s;
+  }
+}
