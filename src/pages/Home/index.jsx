@@ -50,11 +50,10 @@ const Home=()=>{
           Cela fait des années que le monde du développement informatique m'attire.
           En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant
           la formation de <a target="_blank" rel="noreferrer" href="https://www.thehackingproject.org/">The Hacking Project</a> pour une durée de 6 mois.
-          Je m'efforce donc depuis cette formation d'apprendre de nouvelles choses en permanance.
         </p>
       </div>
-
-      <div className="skills" id="competences">
+      <span id="competences"></span>
+      <div className="skills">
         <div className="title-container">
           <h2 className="title shadow">Mes compétences</h2>
           <h2 className="title">Mes compétences</h2>
@@ -66,8 +65,8 @@ const Home=()=>{
             <img className="techno-logo sass" src={sass} alt="sass"/>
         </div>
       </div>
-
-      <div id="formation">
+      <span id="formation"></span>
+      <div>
         <div className="title-container">
           <h2 className="title shadow">Formation</h2>
           <h2 className="title">Formation</h2>
@@ -94,8 +93,8 @@ const Home=()=>{
           <li> Responsive design</li>
         </div>
       </div>
-
-      <div className="projects" id="projects">
+      <span id="projects"></span>
+      <div className="projects">
         <div className="title-container">
           <h2 className="title shadow">Mes Réalisations</h2>
           <h2 className="title">Mes Réalisations</h2>
@@ -113,9 +112,8 @@ const Home=()=>{
           </div>
         </div>
       </div>
-
-
-      <div className="contact" id="contact">
+      <span id="contact"></span>
+      <div className="contact">
         <div className="title-container">
           <h2 className="title shadow">Contact</h2>
           <h2 className="title">Contact</h2>
