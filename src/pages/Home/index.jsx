@@ -1,8 +1,5 @@
 import background from "../../assets/images/pexels-anni-roenkae-4175070.jpg";
-import adobephotoshop from "../../assets/images/adobephotoshop.svg";
-import ronincode from "../../assets/images/ronincode-screen.jpg";
 import roninlogo from "../../assets/images/ronincode-logo.jpg";
-import notacine from "../../assets/images/notacine-screen.jpg";
 import rubyonrails from "../../assets/images/rubyonrails.svg";
 import notalogo from "../../assets/images/notacine-logo.jpg";
 import javascript from "../../assets/images/javascript.svg";
@@ -18,8 +15,7 @@ import css3 from "../../assets/images/css3.svg";
 import sass from "../../assets/images/sass.svg";
 import github from 'assets/images/github.svg';
 import me from "../../assets/images/me.png";
-
-
+import { Link } from 'react-router-dom';
 
 const Home=()=>{
 
@@ -59,6 +55,8 @@ const Home=()=>{
           <h2 className="title">Mes compétences</h2>
         </div>
         <div className="technos">
+          <img className="techno-logo css3" src={css3} alt="css3"/>
+          <img className="techno-logo html5" src={html5} alt="html5"/>
             <img className="techno-logo javascript" src={javascript} alt="javascript"/>
             <img className="techno-logo react" src={react} alt="react"/>
             <img className="techno-logo rubyonrails" src={rubyonrails} alt="rubyonrails"/>
@@ -100,16 +98,12 @@ const Home=()=>{
           <h2 className="title">Mes Réalisations</h2>
         </div>
         <div className="projects-columns">
-          <div>
-            <div>Notaciné</div>
-            <img className="roninlogo" src={roninlogo} alt="roninlogo"/>
-            <img className="ronincode" src={ronincode} alt="ronincode"/>
-          </div>
-          <div>
-            <div>Ronincode</div>
-            <img className="notalogo" src={notalogo} alt="notalogo"/>
-            <img className="notacine" src={notacine} alt="notacine"/>
-          </div>
+          <Link to="/notacine">
+            <img className="notalogo" src={notalogo} alt="logo notaciné"/>
+          </Link>
+          <Link to="/ronincode">
+            <img className="roninlogo" src={roninlogo} alt="logo ronincode"/>
+          </Link>
         </div>
       </div>
       <span id="contact"></span>
@@ -118,7 +112,6 @@ const Home=()=>{
           <h2 className="title shadow">Contact</h2>
           <h2 className="title">Contact</h2>
         </div>
-
         <div className="contact-columns">
           <div>
             <img className="logo-contact" src={location} alt="localisation"/>

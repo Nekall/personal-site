@@ -1,21 +1,28 @@
 .projects{
-  border: solid deeppink 1px;
-}
-
-.projects-columns{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.roninlogo, .notalogo{
-  width: 100px;
-}
-
-.notacine, .ronincode{
-  cursor: zoom-in;
-  width: 600px;
-  &:active{
-    transform: scale(1.6);
-    transition: 0.7s;
+  & .roninlogo, .notalogo{
+    margin: 50px;
+    cursor: pointer;
+    max-width: 250px;
+    transition: 0.5s;
+    &:hover{
+      opacity: 0.5;
+    }
   }
+  & .projects-columns{
+    margin: 100px 0px 100px 0px;
+  }
+}
+
+  .notacine, .ronincode{
+    max-width: 100%;
+  }
+
+  .project-description{
+    min-height: 300px;
+  }
+
+.project-title{
+  margin-top: 50px;
+  font-size: 2rem;
+  font-family: 'Poppins Black';
 }
