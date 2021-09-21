@@ -126,7 +126,6 @@ a{
 
 footer{
   padding: 100px 100px 10px 100px;
-
   & span{
     color: $color-red;
     font-size: 1.2rem;
@@ -136,5 +135,22 @@ footer{
     border-top: solid 1px $color-white;
     margin: 0 auto 25px auto;
     width: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+	.about{
+    & p{
+      margin: 0;
+    }
+  }
+
+  .formation, .expertise-list{
+    margin-left: 50px;
+  }
+
+  footer{
+    padding: 50px 0 10px 0;
   }
 }

@@ -22,13 +22,13 @@
 }
 
 .photo:hover .me, .photo:hover .background{
-  &.me{
+  & .me{
     transform: translateY(30px) scale(1.3);
     transform-origin: 30% bottom;
     clip-path: circle(54.87% at 44.38% 48.27%);
   }
 
-  &.background{
+  & .background{
     transform: scale(1.2)
   }
 }

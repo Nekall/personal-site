@@ -34,7 +34,7 @@ const Home=()=>{
         <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo twitter" src={twitter} /></a>
       </div>
 
-      <a className="btn-download" href="cv.pdf" download>Télécharger mon CV</a>
+      <a className="btn-download" href="assets/images/cv.pdf">Télécharger mon CV</a>
 
       <div className="about">
         <div className="title-container">
@@ -119,7 +119,7 @@ const Home=()=>{
           </div>
           <div>
             <img className="logo-contact" src={download} alt="téléchargement du cv"/>
-            <p><a href="cv.pdf" download>Curriculum vitæ</a></p>
+            <p><a href="assets/images/cv.pdf">Curriculum vitæ</a></p>
           </div>
           <div>
             <img className="logo-contact" src={mail} alt="mail"/>

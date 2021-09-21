@@ -1,5 +1,4 @@
 .skills{
-
   .technos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -29,5 +28,16 @@
       filter: invert(52%) sepia(59%) saturate(467%) hue-rotate(278deg) brightness(81%) contrast(87%);
     }
   }
+}
 
+@media only screen and (max-width: 600px){
+  .skills{
+    & .technos{
+      margin: 80px 0px 0px 0px;
+    }
+
+    & .techno-logo{
+      height: 70px;
+    }
+  }
 }
