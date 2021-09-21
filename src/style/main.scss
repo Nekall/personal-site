@@ -1,11 +1,11 @@
 @import "colors.scss";
+@import "photo.scss";
 @import "projects.scss";
 @import "contact.scss";
 @import "anchors.scss";
 @import "navbar.scss";
 @import "social.scss";
 @import "skills.scss";
-@import "photo.scss";
 
 @font-face {
   font-family: 'Acherus Grotesque';
@@ -23,18 +23,13 @@
 }
 
 html{
-  scroll-behavior: smooth;
-  -moz-user-select: none; /* Firefox */
-  -webkit-user-select: none; /* Chrome, Safari & Opéra */
-  -ms-user-select: none; /* Internet & Edge */
-  user-select: none; /* Standard */
+  margin: 0;
+  padding: 0;
 }
 
 body{
   font-family: 'Acherus Grotesque';
   color: $color-white;
-  margin: 0;
-  padding: 0;
   background-color: $color-black;
   text-align: center;
   font-size: 1.1rem;
@@ -82,7 +77,11 @@ a{
   padding-left: 20px;
 
   &.shadow{
-    background: -webkit-linear-gradient($light-pink, $blue-lavender);
+    background: rgb(232,185,254);
+    background: -moz-linear-gradient(180deg, rgba(232,185,254,1) 30%, rgba(60,65,165,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(232,185,254,1) 30%, rgba(60,65,165,1) 100%);
+    background: linear-gradient(180deg, rgba(232,185,254,1) 30%, rgba(60,65,165,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8b9fe",endColorstr="#3c41a5",GradientType=1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2rem;
