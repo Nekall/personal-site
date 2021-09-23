@@ -28,7 +28,7 @@ html{
 }
 
 body{
-  font-family: 'Acherus Grotesque';
+  font-family: 'Acherus Grotesque', Helvetica, Arial, sans-serif;
   color: $color-white;
   background-color: $color-black;
   text-align: center;
@@ -51,7 +51,7 @@ a{
 }
 
 .btn-download{
-  font-family: 'Poppins Semibold';
+  font-family: 'Poppins Semibold', Impact, Arial;
   text-decoration: none;
   color: $color-white;
   border: solid 1px $color-white;
@@ -71,7 +71,7 @@ a{
 }
 
 .title{
-  font-family: 'Poppins Semibold';
+  font-family: 'Poppins Semibold', Impact, Arial;
   position: absolute;
   font-size: 2rem;
   padding-left: 20px;
