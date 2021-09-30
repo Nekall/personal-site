@@ -104,7 +104,17 @@ a{
   padding-left: 15px;
   & li{
     list-style: none;
-    margin: 5px 0;
+    margin: 10px 0;
+  }
+  & .date{
+    font-family: 'Poppins Semibold', Impact, Arial;
+  }
+  & .logo-thp{
+    height: 40px;
+  }
+  & .thp-name{
+    color: $thp-color;
+    font-family: 'Poppins Black', Impact, Arial;
   }
 }
 

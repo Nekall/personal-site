@@ -14,6 +14,7 @@ import mail from "../../assets/images/mail.svg";
 import css3 from "../../assets/images/css3.svg";
 import sass from "../../assets/images/sass.svg";
 import github from 'assets/images/github.svg';
+import thp from 'assets/images/thp.png';
 import me from "../../assets/images/me.png";
 import { Link } from 'react-router-dom';
 
@@ -34,7 +35,7 @@ const Home=()=>{
         <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo twitter" src={twitter} /></a>
       </div>
 
-      <a className="btn-download" href="assets/images/cv.pdf">Télécharger mon CV</a>
+      <a className="btn-download" href="/Benjamin_Anezo_CV.pdf" target="_blank">Télécharger mon CV</a>
 
       <div className="about">
         <div className="title-container">
@@ -45,7 +46,7 @@ const Home=()=>{
         <p>
           Cela fait des années que le monde du développement informatique m'attire.
           En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant
-          la formation de <a target="_blank" rel="noreferrer" href="https://www.thehackingproject.org/">The Hacking Project</a> pour une durée de 6 mois.
+          le bootcamp de <a target="_blank" rel="noreferrer" href="https://www.thehackingproject.org/">The Hacking Project</a> pendant 6 mois.
         </p>
       </div>
       <span id="competences"></span>
@@ -70,9 +71,19 @@ const Home=()=>{
           <h2 className="title">Formation</h2>
         </div>
         <div className="formation">
-          <p>2021</p>
-          <p>THP</p>
-          <p>Le début de l'aventure...</p>
+          <p className="date">2021</p>
+          <a target="_blank" rel="noreferrer" href="https://www.thehackingproject.org/"><img className="logo-thp" src={thp} alt="logo the hacking project"/></a>
+          <p className="thp-name">The Hacking Project</p>
+          <ul>
+            <li>Maîtriser le frontend, le backend, le génie logiciel ainsi que la gestion de projet</li>
+            <li>Apprendre les langages HTML et CSS ainsi qu'à utiliser Bootstrap</li>
+            <li>Découvrir les bases du marketing digital et les notions de design</li>
+            <li>Apprendre à utiliser les outils logiciels Git et Github</li>
+            <li>Lancer un projet et une application web en utilisant le langage Ruby et le framework Ruby on Rails</li>
+            <li>Approfondir ses connaissances du langage JavaScript de l'intégration des interfaces de programmation d'applications (APIs),SPA, de ReactJS.</li>
+            <li>Utiliser les framework et applications React et Redux ainsi que les librairies graphiques</li>
+            <li>Développer une méthodologie de travail utile à tout poste grâce à la maîtrise des outils de collaboration, de la méthodologie Agile ainsi que de la mise en production et de la gestion humaine</li>
+          </ul>
         </div>
       </div>
 
@@ -119,7 +130,7 @@ const Home=()=>{
           </div>
           <div>
             <img className="logo-contact" src={download} alt="téléchargement du cv"/>
-            <p><a href="assets/images/cv.pdf">Curriculum vitæ</a></p>
+            <p><a href="/Benjamin_Anezo_CV.pdf" target="_blank">Curriculum vitæ</a></p>
           </div>
           <div>
             <img className="logo-contact" src={mail} alt="mail"/>

@@ -18,7 +18,7 @@
     -webkit-text-stroke: 2px $color-white;
     font-size: 2.33rem;
     margin-left: 5px;
-    top: 26px;
+    top: 34px;
   }
 }
 
@@ -64,7 +64,7 @@
   }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 920px){
   .anchors{
     display: none;
   }
