@@ -32,8 +32,8 @@ const Home=()=>{
       </div>
 
       <div className="social">
-      <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo github" src={github} /></a>
-      <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="linkedin" className="logo linkedin" src={linkedin} /></a>
+        <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo github" src={github} /></a>
+        <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="linkedin" className="logo linkedin" src={linkedin} /></a>
         <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo codepen" src={codepen} /></a>
         <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo twitter" src={twitter} /></a>
       </div>
@@ -63,7 +63,6 @@ const Home=()=>{
           <img className="techno-logo html5" src={html5} alt="html5"/>
             <img className="techno-logo javascript" src={javascript} alt="javascript"/>
             <img className="techno-logo react" src={react} alt="react"/>
-            <img className="techno-logo rubyonrails" src={rubyonrails} alt="rubyonrails"/>
             <img className="techno-logo sass" src={sass} alt="sass"/>
         </div>
       </div>
