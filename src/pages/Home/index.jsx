@@ -1,6 +1,5 @@
 import background from "../../assets/images/pexels-anni-roenkae-4175070.jpg";
 import roninlogo from "../../assets/images/ronincode-logo.jpg";
-import rubyonrails from "../../assets/images/rubyonrails.svg";
 import notalogo from "../../assets/images/notacine-logo.jpg";
 import javascript from "../../assets/images/javascript.svg";
 import download from "../../assets/images/download.svg";
