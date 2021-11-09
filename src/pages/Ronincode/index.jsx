@@ -12,8 +12,8 @@ const Ronincode=()=>{
       </Link>
       <p className="project-title">Projet RoninCode</p>
       <img className="ronincode" src={ronincode} alt="ronincode"/>
-      <p><a href="https://github.com/Nekall/ronincode" target="_blank" rel="noreferrer">Github du projet</a></p>
-      <p><a href="https://ronincode.vercel.app" target="_blank" rel="noreferrer">Visiter le site ici !</a></p>
+      <p><a href="https://github.com/Nekall/ronincode" target="_blank" rel="noopener noreferrer">Github du projet</a></p>
+      <p><a href="https://ronincode.vercel.app" target="_blank" rel="noopener noreferrer">Visiter le site ici !</a></p>
       <p className="project-description">Plateforme web de mise en relation de mentors et d'apprentis en développement informatique proposant à ses membres des contenus et outils pédagogiques.</p>
       <footer>
         <div></div>

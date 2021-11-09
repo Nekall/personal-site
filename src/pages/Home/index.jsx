@@ -32,10 +32,10 @@ const Home=()=>{
       </div>
 
       <div className="social">
-        <a href='https://github.com/Nekall' target="_blank" rel="noreferrer"><img alt="github" className="logo github" src={github} /></a>
-        <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noreferrer"><img alt="linkedin" className="logo linkedin" src={linkedin} /></a>
-        <a href='https://codepen.io/LilNeka/' target="_blank" rel="noreferrer"><img alt="codepen" className="logo codepen" src={codepen} /></a>
-        <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noreferrer"><img alt="twitter" className="logo twitter" src={twitter} /></a>
+        <a href='https://github.com/Nekall' target="_blank" rel="noopener noreferrer"><img alt="github" className="logo github" src={github} /></a>
+        <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noopener noreferrer"><img alt="linkedin" className="logo linkedin" src={linkedin} /></a>
+        <a href='https://codepen.io/LilNeka/' target="_blank" rel="noopener noreferrer"><img alt="codepen" className="logo codepen" src={codepen} /></a>
+        <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noopener noreferrer"><img alt="twitter" className="logo twitter" src={twitter} /></a>
       </div>
 
       <a className="btn-download" href="/Benjamin_Anezo_CV.pdf" target="_blank">Télécharger mon CV</a>
@@ -49,7 +49,7 @@ const Home=()=>{
         <p>
           Cela fait des années que le monde du développement informatique m'attire.
           En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant
-          le bootcamp de <a target="_blank" rel="noreferrer" href="https://www.thehackingproject.org/">The Hacking Project</a> pendant 6 mois.
+          le bootcamp de <a target="_blank" rel="noopener noreferrer" href="https://www.thehackingproject.org/">The Hacking Project</a> pendant 6 mois.
         </p>
       </div>
       <span id="competences"></span>
@@ -74,7 +74,7 @@ const Home=()=>{
         </div>
         <div className="formation">
           <p className="date">2021</p>
-          <a target="_blank" rel="noreferrer" href="https://www.thehackingproject.org/"><img className="logo-thp" src={thp} alt="logo the hacking project"/></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.thehackingproject.org/"><img className="logo-thp" src={thp} alt="logo the hacking project"/></a>
           <p className="thp-name">The Hacking Project</p>
           <ul>
             <li>Maîtriser le frontend, le backend, le génie logiciel ainsi que la gestion de projet</li>
