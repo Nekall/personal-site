@@ -1,3 +1,4 @@
+import React from "react";
 import background from "../../assets/images/pexels-anni-roenkae-4175070.jpg";
 import roninlogo from "../../assets/images/ronincode-logo.jpg";
 import notalogo from "../../assets/images/notacine-logo.jpg";

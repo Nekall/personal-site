@@ -1,3 +1,4 @@
+import React from "react";
 import previous from 'assets/images/previous.svg';
 import ronincode from "../../assets/images/ronincode-screen.jpg";
 import { Link } from 'react-router-dom';
