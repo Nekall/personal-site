@@ -1,3 +1,5 @@
+import React from "react";
+
 const Name=()=>(
   <nav className="navbar">
     <div>
