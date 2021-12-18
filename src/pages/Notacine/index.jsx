@@ -1,5 +1,5 @@
 import React from "react";
-import notacine from "../../assets/images/notacine-screen.jpg";
+import notacine from "../../assets/images/projects/notacine-screen.jpg";
 import previous from 'assets/images/previous.svg';
 import { Link } from 'react-router-dom';
 

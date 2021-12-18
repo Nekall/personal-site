@@ -1,25 +1,25 @@
 import React from "react";
 import background from "../../assets/images/pexels-anni-roenkae-4175070.jpg";
-import roninlogo from "../../assets/images/ronincode-logo.jpg";
-import notalogo from "../../assets/images/notacine-logo.jpg";
-import javascript from "../../assets/images/javascript.svg";
+import roninlogo from "../../assets/images/projects/ronincode-logo.jpg";
+import notalogo from "../../assets/images/projects/notacine-logo.jpg";
+import javascript from "../../assets/images/technologies/javascript.svg";
 import download from "../../assets/images/download.svg";
 import location from "../../assets/images/location.svg";
-import linkedin from 'assets/images/linkedin.svg';
-import react from "../../assets/images/react.svg";
-import html5 from "../../assets/images/html5.svg";
-import codepen from 'assets/images/codepen.svg';
-import twitter from 'assets/images/twitter.svg';
+import linkedin from 'assets/images/social-networks/linkedin.svg';
+import react from "../../assets/images/technologies/react.svg";
+import html5 from "../../assets/images/technologies/html5.svg";
+import codepen from 'assets/images/social-networks/codepen.svg';
+import twitter from 'assets/images/social-networks/twitter.svg';
 import mail from "../../assets/images/mail.svg";
-import css3 from "../../assets/images/css3.svg";
-import sass from "../../assets/images/sass.svg";
-import github from 'assets/images/github.svg';
+import css3 from "../../assets/images/technologies/css3.svg";
+import sass from "../../assets/images/technologies/sass.svg";
+import github from 'assets/images/social-networks/github.svg';
 import thp from 'assets/images/thp.png';
 import me from "../../assets/images/me.png";
 import { Link } from 'react-router-dom';
 
 const Home=()=>{
-
+  console.clear()
   console.log(("  _   _               "), '\n', ("( ) ( )              "), '\n', ("| |_| |   __   _   _ "), '\n', ("|  _  | /'__`\\( ) ( )"), '\n',("| | | |(  ___/| (_) |"), '\n',("(_) (_)`\\____)`\\__, |"), '\n',("              ( )_| |"), '\n',("              `\\___/'"));
   console.log("N'hésitez pas a me contacter si vous êtes interessés par mon profil ☺");
 
@@ -27,7 +27,7 @@ const Home=()=>{
     <div className="container">
 
       <div className="photo">
-        <img className="background" src={background} alt="background"/>
+        <img className="background" src={background} alt="pexels Anni Roenkae background"/>
         <img className="me" src={me} alt="me"/>
       </div>
 
