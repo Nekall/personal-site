@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import Home from 'pages/Home';
 import Ronincode from 'pages/Ronincode';
 import Notacine from 'pages/Notacine';
+import Silverfish from 'pages/Silverfish';
 import './style/main.scss';
 import React from "react";
 
@@ -26,6 +27,10 @@ const App=()=>{
             <Route path="/notacine" exact>
               <Name />
               <Notacine />
+            </Route>
+            <Route path="/silverfish-infesting-space" exact>
+              <Name />
+              <Silverfish />
             </Route>
           </Switch>
         </main>

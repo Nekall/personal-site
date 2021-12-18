@@ -1,5 +1,5 @@
 .projects{
-  & .roninlogo, .notalogo{
+  & .roninlogo, .notalogo, .silverlogo{
     margin: 50px;
     cursor: pointer;
     max-width: 250px;
@@ -13,7 +13,7 @@
   }
 }
 
-  .notacine, .ronincode{
+  .notacine, .ronincode, .silverfish{
     max-width: 100%;
   }
 
@@ -29,7 +29,7 @@
 
 @media only screen and (max-width: 600px){
   .projects{
-    & .roninlogo, .notalogo{
+    & .roninlogo, .notalogo, .silverlogo{
       max-width: 200px;
     }
 

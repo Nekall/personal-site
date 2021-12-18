@@ -2,6 +2,7 @@ import React from "react";
 import background from "../../assets/images/pexels-anni-roenkae-4175070.jpg";
 import roninlogo from "../../assets/images/projects/ronincode-logo.jpg";
 import notalogo from "../../assets/images/projects/notacine-logo.jpg";
+import silverlogo from "../../assets/images/projects/silverfish-logo.png";
 import javascript from "../../assets/images/technologies/javascript.svg";
 import download from "../../assets/images/download.svg";
 import location from "../../assets/images/location.svg";
@@ -116,6 +117,9 @@ const Home=()=>{
           </Link>
           <Link to="/ronincode">
             <img className="roninlogo" src={roninlogo} alt="logo ronincode"/>
+          </Link>
+          <Link to="/silverfish-infesting-space">
+            <img className="silverlogo" src={silverlogo} alt="logo silverfish infesting space"/>
           </Link>
         </div>
       </div>
