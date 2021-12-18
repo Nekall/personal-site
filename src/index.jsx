@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from 'components/Navbar';
 import Name from 'components/Name';
+import Footer from 'components/Footer';
 import ReactDOM from 'react-dom';
 import Home from 'pages/Home';
 import Ronincode from 'pages/Ronincode';
@@ -29,6 +30,7 @@ const App=()=>{
           </Switch>
         </main>
       </Router>
+      <Footer/>
     </div>
   )
 };

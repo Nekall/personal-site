@@ -140,12 +140,6 @@ const Home=()=>{
           </div>
         </div>
       </div>
-
-      <footer>
-        <div></div>
-        <p>Site créé par Benjamin avec <span>♥</span></p>
-      </footer>
-
     </div>
   )
 };

@@ -7,7 +7,7 @@ const Ronincode=()=>{
 
   return(
     <div className="container">
-      <Link to="/">
+      <Link to="/#projects">
         <img className="previous" src={previous} alt="Retour à la page principale"/>
       </Link>
       <p className="project-title">Projet RoninCode</p>
@@ -15,11 +15,6 @@ const Ronincode=()=>{
       <p><a href="https://github.com/Nekall/ronincode" target="_blank" rel="noopener noreferrer">Github du projet</a></p>
       <p><a href="https://ronincode.vercel.app" target="_blank" rel="noopener noreferrer">Visiter le site ici !</a></p>
       <p className="project-description">Plateforme web de mise en relation de mentors et d'apprentis en développement informatique proposant à ses membres des contenus et outils pédagogiques.</p>
-      <footer>
-        <div></div>
-        <p>Site créé par Benjamin avec <span>♥</span></p>
-      </footer>
-
     </div>
   )
 };
