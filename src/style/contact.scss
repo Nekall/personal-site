@@ -19,6 +19,9 @@
 
     & .contact-columns{
       display: block;
+      & div{
+        margin-bottom: 50px;
+      }
     }
   }
 }
