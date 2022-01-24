@@ -8,6 +8,7 @@ import Ronincode from 'pages/Ronincode';
 import Notacine from 'pages/Notacine';
 import Silverfish from 'pages/Silverfish';
 import Blog from 'pages/Blog';
+import Error from 'pages/Error';
 import './style/main.scss';
 import React from "react";
 
@@ -36,6 +37,10 @@ const App=()=>{
             <Route path="/blog" exact>
               <Name />
               <Blog />
+            </Route>
+            <Route>
+              <Name />
+              <Error />
             </Route>
           </Switch>
         </main>
