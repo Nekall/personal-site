@@ -15,7 +15,7 @@ Programmation en HTML, CSS, Sass, JavaScript, React.
 ## Formation
 
 2021  
-╘╤ THP:TheHackingProject  
+╘╤ THP: TheHackingProject  
       ╞Reconversion professionnelle en format Bootcamp.  
       ╘Développeur fullstack.  
   
@@ -24,7 +24,7 @@ Programmation en HTML, CSS, Sass, JavaScript, React.
       ╘ Formation React Native, développement d'applications mobiles.  
   
 2021  
-╘╤Udemy  
+╘╤ Udemy  
       ╘ NodeJS: Développer une API Rest avec MySQL.  
   
 ## Intérêt
