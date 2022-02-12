@@ -16,15 +16,15 @@ Programmation en HTML, CSS, Sass, Bash, JavaScript, React.
 
 2022  
 ╘╤ 3W Academy  
-╘ Développement fullstack en alternance.  
+      ╘ Développement fullstack en alternance.  
 
 2021  
 ╘╤ Udemy  
-╘ NodeJS: Développer une API Rest avec MySQL.  
+      ╘ NodeJS: Développer une API Rest avec MySQL.  
 
 2021  
 ╘╤ Udemy  
-╘ Formation React Native, développement d'applications mobiles.  
+      ╘ Formation React Native, développement d'applications mobiles.  
 
 2021  
 ╘╤ THP: TheHackingProject  
