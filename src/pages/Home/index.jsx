@@ -15,9 +15,10 @@ import mail from "../../assets/images/mail.svg";
 import css3 from "../../assets/images/technologies/css3.svg";
 import sass from "../../assets/images/technologies/sass.svg";
 import github from 'assets/images/social-networks/github.svg';
-import thp from 'assets/images/thp.png';
+import thp from "assets/images/thp.png";
+import threew from "assets/images/3w-academy.svg";
 import me from "../../assets/images/me.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Home=()=>{
   console.clear()
@@ -26,31 +27,27 @@ const Home=()=>{
 
   return(
     <div className="container">
-
       <div className="photo">
         <img className="background" src={background} alt="pexels Anni Roenkae background"/>
         <img className="me" src={me} alt="me"/>
       </div>
-
       <div className="social">
         <a href='https://github.com/Nekall' target="_blank" rel="noopener noreferrer"><img alt="github" className="logo github" src={github} /></a>
         <a href='https://www.linkedin.com/in/benjamin-anezo-40b83b216/' target="_blank" rel="noopener noreferrer"><img alt="linkedin" className="logo linkedin" src={linkedin} /></a>
         <a href='https://codepen.io/LilNeka/' target="_blank" rel="noopener noreferrer"><img alt="codepen" className="logo codepen" src={codepen} /></a>
         <a href='https://twitter.com/36Qm7p5CGz' target="_blank" rel="noopener noreferrer"><img alt="twitter" className="logo twitter" src={twitter} /></a>
       </div>
-
-      <a className="btn-download" href="/Benjamin_Anezo_CV.pdf" target="_blank">Télécharger mon CV</a>
-
+      <a className="btn-download" href="/Benjamin_Anezo_CV.png" target="_blank">Télécharger mon CV</a>
       <div className="about">
         <div className="title-container">
           <h2 className="title shadow">A propos</h2>
           <h2 className="title">A propos</h2>
         </div>
-
         <p>
           Cela fait des années que le monde du développement informatique m'attire.
           En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant
-          le bootcamp de <a target="_blank" rel="noopener noreferrer" href="https://www.thehackingproject.org/">The Hacking Project</a> pendant 6 mois.
+          le bootcamp de <a target="_blank" rel="noopener noreferrer" href="https://www.thehackingproject.org/">The Hacking Project</a> afin de devenir fullstack développeur.
+          Suite à cette première formation et dans le but de me professionaliser, je suis actuellement étudiant à la <a target="_blank" rel="noopener noreferrer" href="https://3wa.fr/">3w Academy</a> en alternance.
         </p>
       </div>
       <span id="competences"></span>
@@ -74,6 +71,15 @@ const Home=()=>{
           <h2 className="title">Formation</h2>
         </div>
         <div className="formation">
+          <p className="date">2022</p>
+          <a target="_blank" rel="noopener noreferrer" href="https://3wa.fr/"><img className="logo-3w" src={threew} alt="logo 3w Academy"/></a>
+          <p className="threew-name">3W Academy</p>
+          <ul>
+            <li>Approfondir ses connaissances du langage JavaScript</li>
+            <li>Maîtriser le framework React pour le front</li>
+            <li>Maîtriser l’une des technologies avancées les plus utilisées en back : NodeJS</li>
+            <li>Consolider les compétences en Programmation Orientée Objet</li>
+          </ul>
           <p className="date">2021</p>
           <a target="_blank" rel="noopener noreferrer" href="https://www.thehackingproject.org/"><img className="logo-thp" src={thp} alt="logo the hacking project"/></a>
           <p className="thp-name">The Hacking Project</p>
@@ -89,20 +95,21 @@ const Home=()=>{
           </ul>
         </div>
       </div>
-
       <div>
         <div className="title-container">
           <h2 className="title shadow">Savoir-faire</h2>
           <h2 className="title">Savoir-faire</h2>
         </div>
         <div className="expertise-list">
-          <li> Choisir les bonnes technologies à utiliser</li>
-          <li> Développer des applications web pour des besoins spécifiques</li>
-          <li> Adaptation rapide à de nouveaux langages et technologies</li>
-          <li> Capacité d’analyse et de résolution de problème</li>
-          <li> Évolution et maintenance de sites et d’applications</li>
-          <li> Développement Fullstack (Frontend et Backend)</li>
-          <li> Responsive design</li>
+          <ul>
+            <li> Choisir les bonnes technologies à utiliser</li>
+            <li> Développer des applications web pour des besoins spécifiques</li>
+            <li> Adaptation rapide à de nouveaux langages et technologies</li>
+            <li> Capacité d’analyse et de résolution de problème</li>
+            <li> Évolution et maintenance de sites et d’applications</li>
+            <li> Développement Fullstack (Frontend et Backend)</li>
+            <li> Responsive design</li>
+          </ul>
         </div>
       </div>
       <span id="projects"></span>
@@ -136,7 +143,7 @@ const Home=()=>{
           </div>
           <div>
             <img className="logo-contact" src={download} alt="téléchargement du cv"/>
-            <p><a href="/Benjamin_Anezo_CV.pdf" target="_blank">Curriculum vitæ</a></p>
+            <p><a href="/Benjamin_Anezo_CV.png" target="_blank">Curriculum vitæ</a></p>
           </div>
           <div>
             <img className="logo-contact" src={mail} alt="mail"/>

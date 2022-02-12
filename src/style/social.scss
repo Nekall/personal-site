@@ -5,7 +5,6 @@
     width: 45px;
     margin-right: 15px;
     filter: invert(99%) sepia(15%) saturate(300%) hue-rotate(127deg) brightness(113%) contrast(100%);
-    transition: 0.5s;
 
     &.linkedin:hover{
       filter: invert(24%) sepia(78%) saturate(2189%) hue-rotate(197deg) brightness(95%) contrast(92%);

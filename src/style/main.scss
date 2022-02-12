@@ -108,6 +108,10 @@ a{
   }
   & .date{
     font-family: 'Poppins Semibold', Impact, Arial;
+    padding-top: 10px;
+    margin-left: -45px;
+    margin-bottom: 20px;
+    background-color: $color-black;
   }
   & .logo-thp{
     height: 40px;
@@ -116,13 +120,23 @@ a{
     color: $thp-color;
     font-family: 'Poppins Black', Impact, Arial;
   }
+  & .logo-3w{
+    width: 85px;
+  }
+  & .threew-name{
+    color: #ed4036;
+    font-family: 'Poppins Black', Impact, Arial;
+  }
+  & ul{
+    margin-bottom: 30px;
+  }
 }
 
 .about{
   margin-bottom: 20px;
   margin-top: 20px;
   & p{
-    margin: 100px 50px;
+    margin: 80px 50px;
   }
 }
 
