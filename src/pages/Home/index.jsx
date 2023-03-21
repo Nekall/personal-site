@@ -14,7 +14,7 @@ import mail from "../../assets/images/mail.svg";
 import css3 from "../../assets/images/technologies/css3.svg";
 import sass from "../../assets/images/technologies/sass.svg";
 import github from 'assets/images/social-networks/github.svg';
-import thp from "assets/images/thp.png";
+import thp from "assets/images/the-hacking-project-logo.webp";
 import threew from "assets/images/3w-academy.svg";
 import me from "../../assets/images/me-v2.png";
 import meTransparent from "../../assets/images/me-transparent.png";
@@ -71,9 +71,8 @@ const Home=()=>{
           <h2 className="title">Formation</h2>
         </div>
         <div className="formation">
-          <p className="date">2022</p>
+          <p className="date">2023</p>
           <a target="_blank" rel="noopener noreferrer" href="https://3wa.fr/"><img className="logo-3w" src={threew} alt="logo 3w Academy"/></a>
-          <p className="threew-name">3W Academy</p>
           <ul>
             <li>Approfondir ses connaissances du langage JavaScript</li>
             <li>Maîtriser le framework React pour le front</li>
@@ -82,7 +81,6 @@ const Home=()=>{
           </ul>
           <p className="date">2021</p>
           <a target="_blank" rel="noopener noreferrer" href="https://www.thehackingproject.org/"><img className="logo-thp" src={thp} alt="logo the hacking project"/></a>
-          <p className="thp-name">The Hacking Project</p>
           <ul>
             <li>Maîtriser le frontend, le backend, le génie logiciel ainsi que la gestion de projet</li>
             <li>Apprendre les langages HTML et CSS ainsi qu'à utiliser Bootstrap</li>
@@ -119,14 +117,14 @@ const Home=()=>{
           <h2 className="title">Mes Réalisations</h2>
         </div>
         <div className="projects-columns">
-          <Link to="/notacine">
-            <img className="notalogo" src={notalogo} alt="logo notaciné"/>
+          <Link to="/silverfish-infesting-space">
+            <img className="silverlogo" src={silverlogo} alt="logo silverfish infesting space"/>
           </Link>
           <Link to="/ronincode">
             <img className="roninlogo" src={roninlogo} alt="logo ronincode"/>
           </Link>
-          <Link to="/silverfish-infesting-space">
-            <img className="silverlogo" src={silverlogo} alt="logo silverfish infesting space"/>
+          <Link to="/notacine">
+            <img className="notalogo" src={notalogo} alt="logo notaciné"/>
           </Link>
         </div>
       </div>
