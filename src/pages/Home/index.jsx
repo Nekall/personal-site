@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// Components
+import Contact from "../../components/Contact";
+
 // Assets
 import meTransparent from "../../assets/images/me-transparent.png";
 import linkedin from 'assets/images/social-networks/linkedin.svg';
@@ -8,10 +11,7 @@ import codepen from 'assets/images/social-networks/codepen.svg';
 import twitter from 'assets/images/social-networks/twitter.svg';
 import thp from "assets/images/the-hacking-project-logo.webp";
 import github from 'assets/images/social-networks/github.svg';
-import download from "../../assets/images/download.svg";
-import location from "../../assets/images/location.svg";
 import threew from "assets/images/3w-academy.svg";
-import mail from "../../assets/images/mail.svg";
 import me from "../../assets/images/me-v2.png";
 
 // Assets Projects
@@ -143,26 +143,7 @@ const Home=()=>{
         </div>
       </div>
       <span id="contact"></span>
-      <div className="contact">
-        <div className="title-container">
-          <h2 className="title shadow">Contact</h2>
-          <h2 className="title">Contact</h2>
-        </div>
-        <div className="contact-columns">
-          <div>
-            <img className="logo-contact" src={location} alt="localisation"/>
-            <p>Paris</p>
-          </div>
-          <div>
-            <img className="logo-contact" src={download} alt="téléchargement du cv"/>
-            <p><a href="/Benjamin_Anezo_CV.png" target="_blank">Curriculum vitæ</a></p>
-          </div>
-          <div>
-            <img className="logo-contact" src={mail} alt="mail"/>
-            <p>contact@neka.dev</p>
-          </div>
-        </div>
-      </div>
+      <Contact />
     </div>
   )
 };
