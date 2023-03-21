@@ -4,6 +4,7 @@ import React from "react";
 import Projects from "../../components/Projects";
 import Contact from "../../components/Contact";
 import Formation from "../../components/Formation";
+import Skills from "../../components/Skills";
 
 // Assets
 import meTransparent from "../../assets/images/me-transparent.png";
@@ -12,17 +13,6 @@ import codepen from 'assets/images/social-networks/codepen.svg';
 import twitter from 'assets/images/social-networks/twitter.svg';
 import github from 'assets/images/social-networks/github.svg';
 import me from "../../assets/images/me-v2.png";
-
-// Assets Technologies
-import javascript from "../../assets/images/technologies/javascript.svg";
-import react from "../../assets/images/technologies/react.svg";
-import html5 from "../../assets/images/technologies/html5.svg";
-import css3 from "../../assets/images/technologies/css3.svg";
-import sass from "../../assets/images/technologies/sass.svg";
-import nextjs from "../../assets/images/technologies/nextjs.svg";
-import strapi from "../../assets/images/technologies/strapi.svg";
-import typescript from "../../assets/images/technologies/typescript.svg";
-import nodejs from "../../assets/images/technologies/nodejs.svg";
 
 const Home=()=>{
   console.clear()
@@ -55,23 +45,7 @@ const Home=()=>{
         </p>
       </div>
       <span id="competences"></span>
-      <div className="skills">
-        <div className="title-container">
-          <h2 className="title shadow">Mes compétences</h2>
-          <h2 className="title">Mes compétences</h2>
-        </div>
-        <div className="technos">
-          <img className="techno-logo css3" src={css3} alt="css3"/>
-          <img className="techno-logo html5" src={html5} alt="html5"/>
-            <img className="techno-logo javascript" src={javascript} alt="javascript"/>
-            <img className="techno-logo typescript" src={typescript} alt="typescript"/>
-            <img className="techno-logo sass" src={sass} alt="sass"/>
-            <img className="techno-logo react" src={react} alt="react"/>
-            <img className="techno-logo nextjs" src={nextjs} alt="nextjs"/>
-            <img className="techno-logo nodejs" src={nodejs} alt="nodejs"/>
-            <img className="techno-logo strapi" src={strapi} alt="strapi"/>
-        </div>
-      </div>
+      <Skills />
       <span id="formation"></span>
       <Formation />
       <span id="projects"></span>
