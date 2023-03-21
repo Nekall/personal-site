@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // Components
+import Projects from "../../components/Projects";
 import Contact from "../../components/Contact";
 
 // Assets
@@ -13,11 +13,6 @@ import thp from "assets/images/the-hacking-project-logo.webp";
 import github from 'assets/images/social-networks/github.svg';
 import threew from "assets/images/3w-academy.svg";
 import me from "../../assets/images/me-v2.png";
-
-// Assets Projects
-import silverlogo from "../../assets/images/projects/silverfish-logo.png";
-import roninlogo from "../../assets/images/projects/ronincode-logo.jpg";
-import notalogo from "../../assets/images/projects/notacine-logo.jpg";
 
 // Assets Technologies
 import javascript from "../../assets/images/technologies/javascript.svg";
@@ -125,23 +120,7 @@ const Home=()=>{
         </div>
       </div>
       <span id="projects"></span>
-      <div className="projects">
-        <div className="title-container">
-          <h2 className="title shadow">Mes Réalisations</h2>
-          <h2 className="title">Mes Réalisations</h2>
-        </div>
-        <div className="projects-columns">
-          <Link to="/silverfish-infesting-space">
-            <img className="silverlogo" src={silverlogo} alt="logo silverfish infesting space"/>
-          </Link>
-          <Link to="/ronincode">
-            <img className="roninlogo" src={roninlogo} alt="logo ronincode"/>
-          </Link>
-          <Link to="/notacine">
-            <img className="notalogo" src={notalogo} alt="logo notaciné"/>
-          </Link>
-        </div>
-      </div>
+      <Projects />
       <span id="contact"></span>
       <Contact />
     </div>
