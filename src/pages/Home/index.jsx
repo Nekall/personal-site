@@ -1,24 +1,34 @@
 import React from "react";
-import roninlogo from "../../assets/images/projects/ronincode-logo.jpg";
-import notalogo from "../../assets/images/projects/notacine-logo.jpg";
-import silverlogo from "../../assets/images/projects/silverfish-logo.png";
-import javascript from "../../assets/images/technologies/javascript.svg";
-import download from "../../assets/images/download.svg";
-import location from "../../assets/images/location.svg";
+import { Link } from "react-router-dom";
+
+// Assets
+import meTransparent from "../../assets/images/me-transparent.png";
 import linkedin from 'assets/images/social-networks/linkedin.svg';
-import react from "../../assets/images/technologies/react.svg";
-import html5 from "../../assets/images/technologies/html5.svg";
 import codepen from 'assets/images/social-networks/codepen.svg';
 import twitter from 'assets/images/social-networks/twitter.svg';
+import thp from "assets/images/the-hacking-project-logo.webp";
+import github from 'assets/images/social-networks/github.svg';
+import download from "../../assets/images/download.svg";
+import location from "../../assets/images/location.svg";
+import threew from "assets/images/3w-academy.svg";
 import mail from "../../assets/images/mail.svg";
+import me from "../../assets/images/me-v2.png";
+
+// Assets Projects
+import silverlogo from "../../assets/images/projects/silverfish-logo.png";
+import roninlogo from "../../assets/images/projects/ronincode-logo.jpg";
+import notalogo from "../../assets/images/projects/notacine-logo.jpg";
+
+// Assets Technologies
+import javascript from "../../assets/images/technologies/javascript.svg";
+import react from "../../assets/images/technologies/react.svg";
+import html5 from "../../assets/images/technologies/html5.svg";
 import css3 from "../../assets/images/technologies/css3.svg";
 import sass from "../../assets/images/technologies/sass.svg";
-import github from 'assets/images/social-networks/github.svg';
-import thp from "assets/images/the-hacking-project-logo.webp";
-import threew from "assets/images/3w-academy.svg";
-import me from "../../assets/images/me-v2.png";
-import meTransparent from "../../assets/images/me-transparent.png";
-import { Link } from "react-router-dom";
+import nextjs from "../../assets/images/technologies/nextjs.svg";
+import strapi from "../../assets/images/technologies/strapi.svg";
+import typescript from "../../assets/images/technologies/typescript.svg";
+import nodejs from "../../assets/images/technologies/nodejs.svg";
 
 const Home=()=>{
   console.clear()
@@ -60,8 +70,12 @@ const Home=()=>{
           <img className="techno-logo css3" src={css3} alt="css3"/>
           <img className="techno-logo html5" src={html5} alt="html5"/>
             <img className="techno-logo javascript" src={javascript} alt="javascript"/>
-            <img className="techno-logo react" src={react} alt="react"/>
+            <img className="techno-logo typescript" src={typescript} alt="typescript"/>
             <img className="techno-logo sass" src={sass} alt="sass"/>
+            <img className="techno-logo react" src={react} alt="react"/>
+            <img className="techno-logo nextjs" src={nextjs} alt="nextjs"/>
+            <img className="techno-logo nodejs" src={nodejs} alt="nodejs"/>
+            <img className="techno-logo strapi" src={strapi} alt="strapi"/>
         </div>
       </div>
       <span id="formation"></span>
