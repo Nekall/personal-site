@@ -96,34 +96,6 @@ a{
   height: 100px;
 }
 
-.formation, .expertise-list{
-  border-left: solid 2px $color-white;
-  margin-left: 150px;
-  margin-bottom: 20px;
-  text-align: left;
-  padding-left: 15px;
-  & li{
-    list-style: none;
-    margin: 10px 0;
-  }
-  & .date{
-    font-family: 'Poppins Semibold', Impact, Arial;
-    padding-top: 10px;
-    margin-left: -45px;
-    margin-bottom: 20px;
-    background-color: $color-black;
-  }
-  & .logo-thp{
-    height: 50px;
-  }
-  & .logo-3w{
-    width: 65px;
-  }
-  & ul{
-    margin-bottom: 30px;
-  }
-}
-
 .about{
   margin-bottom: 20px;
   margin-top: 20px;

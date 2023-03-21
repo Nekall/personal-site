@@ -3,15 +3,14 @@ import React from "react";
 // Components
 import Projects from "../../components/Projects";
 import Contact from "../../components/Contact";
+import Formation from "../../components/Formation";
 
 // Assets
 import meTransparent from "../../assets/images/me-transparent.png";
 import linkedin from 'assets/images/social-networks/linkedin.svg';
 import codepen from 'assets/images/social-networks/codepen.svg';
 import twitter from 'assets/images/social-networks/twitter.svg';
-import thp from "assets/images/the-hacking-project-logo.webp";
 import github from 'assets/images/social-networks/github.svg';
-import threew from "assets/images/3w-academy.svg";
 import me from "../../assets/images/me-v2.png";
 
 // Assets Technologies
@@ -74,51 +73,7 @@ const Home=()=>{
         </div>
       </div>
       <span id="formation"></span>
-      <div>
-        <div className="title-container">
-          <h2 className="title shadow">Formation</h2>
-          <h2 className="title">Formation</h2>
-        </div>
-        <div className="formation">
-          <p className="date">2023</p>
-          <a target="_blank" rel="noopener noreferrer" href="https://3wa.fr/"><img className="logo-3w" src={threew} alt="logo 3w Academy"/></a>
-          <ul>
-            <li>Approfondir ses connaissances du langage JavaScript</li>
-            <li>Maîtriser le framework React pour le front</li>
-            <li>Maîtriser l’une des technologies avancées les plus utilisées en back : NodeJS</li>
-            <li>Consolider les compétences en Programmation Orientée Objet</li>
-          </ul>
-          <p className="date">2021</p>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.thehackingproject.org/"><img className="logo-thp" src={thp} alt="logo the hacking project"/></a>
-          <ul>
-            <li>Maîtriser le frontend, le backend, le génie logiciel ainsi que la gestion de projet</li>
-            <li>Apprendre les langages HTML et CSS ainsi qu'à utiliser Bootstrap</li>
-            <li>Découvrir les bases du marketing digital et les notions de design</li>
-            <li>Apprendre à utiliser les outils logiciels Git et Github</li>
-            <li>Lancer un projet et une application web en utilisant le langage Ruby et le framework Ruby on Rails</li>
-            <li>Approfondir ses connaissances du langage JavaScript de l'intégration des interfaces de programmation d'applications (APIs),SPA, de ReactJS.</li>
-            <li>Utiliser les framework et applications React et Redux ainsi que les librairies graphiques</li>
-            <li>Développer une méthodologie de travail utile à tout poste grâce à la maîtrise des outils de collaboration, de la méthodologie Agile ainsi que de la mise en production et de la gestion humaine</li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <div className="title-container">
-          <h2 className="title shadow">Savoir-faire</h2>
-          <h2 className="title">Savoir-faire</h2>
-        </div>
-        <div className="expertise-list">
-          <ul>
-            <li> Choisir les bonnes technologies à utiliser</li>
-            <li> Développer des applications web pour des besoins spécifiques</li>
-            <li> Adaptation rapide à de nouveaux langages et technologies</li>
-            <li> Capacité d’analyse et de résolution de problème</li>
-            <li> Évolution et maintenance de sites et d’applications</li>
-            <li> Développement Fullstack (Frontend et Backend)</li>
-            <li> Responsive design</li>
-          </ul>
-        </div>
-      </div>
+      <Formation />
       <span id="projects"></span>
       <Projects />
       <span id="contact"></span>
