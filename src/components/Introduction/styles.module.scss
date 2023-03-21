@@ -1,0 +1,78 @@
+.introduction{
+    .photo{
+        display: flex;
+        height: 450px;
+        justify-content: center;
+        align-items: center;
+      
+        & .me{
+          width: 300px;
+          transition: 0.5s;
+          border-radius: 50%;
+          position: absolute;
+        }
+      
+        & .me_transparent{
+          width: 300px;
+          transition: 0.5s;
+          border-radius: 0 0 50% 50%;
+          position: absolute;
+        }
+        
+        &:hover{
+          & .me{
+            opacity: 0.8;
+          }
+      
+          & .me_transparent{
+            width: 350px;
+          }
+        }
+      }
+
+      .social{
+        margin-bottom: 25px;
+      
+        .logo {
+          width: 45px;
+          margin-right: 15px;
+          filter: invert(99%) sepia(15%) saturate(300%) hue-rotate(127deg) brightness(113%) contrast(100%);
+      
+          &.linkedin:hover{
+            filter: invert(24%) sepia(78%) saturate(2189%) hue-rotate(197deg) brightness(95%) contrast(92%);
+          }
+      
+          &.twitter:hover{
+            filter: invert(74%) sepia(76%) saturate(5194%) hue-rotate(179deg) brightness(93%) contrast(104%);
+          }
+      
+          &.codepen:hover{
+            filter: invert(77%) sepia(2%) saturate(14%) hue-rotate(353deg) brightness(88%) contrast(84%);
+          }
+      
+          &.github:hover{
+            filter: invert(36%) sepia(85%) saturate(3323%) hue-rotate(348deg) brightness(102%) contrast(83%);
+          }
+        }
+      }
+
+      .btn_download{
+        font-family: 'Poppins Semibold', Impact, Arial;
+        text-decoration: none;
+        color: #fff;
+        border: solid 1px #fff;
+        padding: 8px;
+        box-shadow: 5px 5px #fff;
+        transition: 0.3s;
+        margin-right: 5px;
+      
+        &:hover{
+          margin-right: 2px;
+          box-shadow: 3px 3px #fff;
+        }
+        &:focus{
+          margin-right: 0;
+          box-shadow: 1px 1px #fff;
+        }
+      }
+}
