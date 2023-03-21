@@ -1,5 +1,4 @@
 import React from "react";
-import background from "../../assets/images/pexels-anni-roenkae-4175070.jpg";
 import roninlogo from "../../assets/images/projects/ronincode-logo.jpg";
 import notalogo from "../../assets/images/projects/notacine-logo.jpg";
 import silverlogo from "../../assets/images/projects/silverfish-logo.png";
@@ -17,7 +16,8 @@ import sass from "../../assets/images/technologies/sass.svg";
 import github from 'assets/images/social-networks/github.svg';
 import thp from "assets/images/thp.png";
 import threew from "assets/images/3w-academy.svg";
-import me from "../../assets/images/me.png";
+import me from "../../assets/images/me-v2.png";
+import meTransparent from "../../assets/images/me-transparent.png";
 import { Link } from "react-router-dom";
 
 const Home=()=>{
@@ -28,8 +28,8 @@ const Home=()=>{
   return(
     <div className="container">
       <div className="photo">
-        <img className="background" src={background} alt="pexels Anni Roenkae background"/>
         <img className="me" src={me} alt="me"/>
+        <img className="me-transparent" src={meTransparent} alt="me"/>
       </div>
       <div className="social">
         <a href='https://github.com/Nekall' target="_blank" rel="noopener noreferrer"><img alt="github" className="logo github" src={github} /></a>
@@ -47,7 +47,7 @@ const Home=()=>{
           Cela fait des années que le monde du développement informatique m'attire.
           En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant
           le bootcamp de <a target="_blank" rel="noopener noreferrer" href="https://www.thehackingproject.org/">The Hacking Project</a> afin de devenir fullstack développeur.
-          Suite à cette première formation et dans le but de me professionnaliser, je suis actuellement étudiant à la <a target="_blank" rel="noopener noreferrer" href="https://3wa.fr/">3w Academy</a> en alternance.
+          Suite à cette première formation et dans le but de me professionnaliser, je suis actuellement étudiant à la <a target="_blank" rel="noopener noreferrer" href="https://3wa.fr/">3w Academy</a> en alternance chez Slickk.
         </p>
       </div>
       <span id="competences"></span>

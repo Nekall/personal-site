@@ -5,7 +5,7 @@ Fait avec* <span style="color:red;">❤</span>
 
 ## A propos
 
-Cela fait des années que le monde du développement informatique m'attire. En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant le bootcamp de [The Hacking Project](https://www.thehackingproject.org/) durant 6 mois. Suite à cette première formation et dans le but de me professionnaliser, je suis actuellement étudiant à la [3w Academy](https://3wa.fr/) en alternance.
+Cela fait des années que le monde du développement informatique m'attire. En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant le bootcamp de [The Hacking Project](https://www.thehackingproject.org/) durant 6 mois. Suite à cette première formation et dans le but de me professionnaliser, je suis actuellement étudiant à la [3w Academy](https://3wa.fr/) en alternance chez Slickk.
 
 ## Mes compétences
 
