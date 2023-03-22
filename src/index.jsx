@@ -1,17 +1,24 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from 'components/Navbar';
-import Name from 'components/Name';
-import Footer from 'components/Footer';
 import ReactDOM from 'react-dom';
-import Home from 'pages/Home';
+
+// Components
+import Navbar from 'components/Navbar';
+import Footer from 'components/Footer';
+import Name from 'components/Name';
+
+// Pages
+import Silverfish from 'pages/Silverfish';
 import Ronincode from 'pages/Ronincode';
 import Notacine from 'pages/Notacine';
-import Silverfish from 'pages/Silverfish';
+import Project from 'pages/Project';
 import Slickk from 'pages/Slickk';
 import Savime from 'pages/Savime';
 import Error from 'pages/Error';
+import Home from 'pages/Home';
+
+// Styles
 import './style/main.scss';
-import React from "react";
+
 
 const App=()=>{
   return (
@@ -42,6 +49,10 @@ const App=()=>{
             <Route path="/savime" exact>
               <Name />
               <Savime />
+            </Route>
+            <Route path="/project" exact>
+              <Name />
+              <Project />
             </Route>
             <Route>
               <Name />
