@@ -1,6 +1,7 @@
 // Assets
 import thp from "assets/images/the-hacking-project-logo.webp";
 import threew from "assets/images/3w-academy.svg";
+import slickk from "assets/images/slickk.svg";
 
 // Styles
 import styles from "./styles.module.scss";
@@ -16,6 +17,8 @@ const Formation = () => {
                 <div className={styles.formation}>
                     <p className={styles.date}>2023</p>
                     <a target="_blank" rel="noopener noreferrer" href="https://3wa.fr/"><img className={styles.logo_3w} src={threew} alt="logo 3w Academy" /></a>
+                    <span className={styles.__with}><span>⨉</span></span>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.slickk.eu"><img className={styles.logo_slickk} src={slickk} alt="logo Slickk" /></a>
                     <ul>
                         <li>Approfondir ses connaissances du langage JavaScript</li>
                         <li>Maîtriser le framework React pour le front</li>
