@@ -7,6 +7,8 @@ import Home from 'pages/Home';
 import Ronincode from 'pages/Ronincode';
 import Notacine from 'pages/Notacine';
 import Silverfish from 'pages/Silverfish';
+import Slickk from 'pages/Slickk';
+import Savime from 'pages/Savime';
 import Error from 'pages/Error';
 import './style/main.scss';
 import React from "react";
@@ -32,6 +34,14 @@ const App=()=>{
             <Route path="/silverfish-infesting-space" exact>
               <Name />
               <Silverfish />
+            </Route>
+            <Route path="/slickk" exact>
+              <Name />
+              <Slickk />
+            </Route>
+            <Route path="/savime" exact>
+              <Name />
+              <Savime />
             </Route>
             <Route>
               <Name />
