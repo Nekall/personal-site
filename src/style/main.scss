@@ -86,20 +86,6 @@ a{
   align-items: flex-start;
 }
 
-footer{
-  padding: 100px 100px 10px 100px;
-  & span{
-    color: $color-red;
-    font-size: 1.2rem;
-  }
-
-  & div{
-    border-top: solid 1px $color-white;
-    margin: 0 auto 25px auto;
-    width: 150px;
-  }
-}
-
 .error{
   margin: 15% 15%;
 }
