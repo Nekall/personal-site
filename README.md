@@ -14,7 +14,7 @@ Programmation en HTML, CSS, Sass, Bash, JavaScript, React.
 
 ## Formation
 
-2022  
+2023  
 ╘╤ 3W Academy  
       ╘ Développement fullstack en alternance.  
 
