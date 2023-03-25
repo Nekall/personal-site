@@ -1,10 +1,10 @@
 // Assets
-import meTransparent from "../../assets/images/me-transparent.png";
+import meTransparent from "../../assets/images/me-transparent.webp";
 import linkedin from 'assets/images/social-networks/linkedin.svg';
 import codepen from 'assets/images/social-networks/codepen.svg';
 import twitter from 'assets/images/social-networks/twitter.svg';
 import github from 'assets/images/social-networks/github.svg';
-import me from "../../assets/images/me-v2.png";
+import me from "../../assets/images/me-v2.webp";
 
 // Styles
 import styles from "./styles.module.scss";
