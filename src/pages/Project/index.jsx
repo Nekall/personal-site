@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // Assets
-import previous from 'assets/images/previous.svg';
+import previous from "assets/images/previous.svg";
 
 // Styles
 import styles from "../../style/pages/Project.module.scss";
