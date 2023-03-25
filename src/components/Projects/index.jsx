@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 
 // Assets Projects
-import silverlogo from "../../assets/images/projects/silverfish-logo.png";
-import roninlogo from "../../assets/images/projects/ronincode-logo.jpg";
-import notalogo from "../../assets/images/projects/notacine-logo.jpg";
-import slickk from "../../assets/images/projects/slickk-logo.png";
-import savime from "../../assets/images/projects/savime-logo.png";
+import silverlogo from "../../assets/images/projects/silverfish-logo.webp";
+import roninlogo from "../../assets/images/projects/ronincode-logo.webp";
+import notalogo from "../../assets/images/projects/notacine-logo.webp";
+import slickk from "../../assets/images/projects/slickk-logo.webp";
+import savime from "../../assets/images/projects/savime-logo.webp";
 
 // Styles
 import styles from "./styles.module.scss";

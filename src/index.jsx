@@ -12,11 +12,11 @@ import Error from 'pages/Error';
 import Home from 'pages/Home';
 
 // Assets
-import silverfish from "./assets/images/projects/silverfish-screen.png";
-import ronincode from "./assets/images/projects/ronincode-screen.jpg";
-import notacine from "./assets/images/projects/notacine-screen.jpg";
-import slickk from "./assets/images/projects/slickk-screen.png";
-import savime from "./assets/images/projects/savime-screen.png";
+import silverfish from "./assets/images/projects/silverfish-screen.webp";
+import ronincode from "./assets/images/projects/ronincode-screen.webp";
+import notacine from "./assets/images/projects/notacine-screen.webp";
+import slickk from "./assets/images/projects/slickk-screen.webp";
+import savime from "./assets/images/projects/savime-screen.webp";
 
 // Styles
 import './style/main.scss';
