@@ -3,12 +3,12 @@ import React from "react";
 // Styles
 import styles from "../../styles/pages/Home.module.scss"
 
-const Home=()=>{
+const Home = () => {
   console.clear()
-  console.log(("  _   _               "), '\n', ("( ) ( )              "), '\n', ("| |_| |   __   _   _ "), '\n', ("|  _  | /'__`\\( ) ( )"), '\n',("| | | |(  ___/| (_) |"), '\n',("(_) (_)`\\____)`\\__, |"), '\n',("              ( )_| |"), '\n',("              `\\___/'"));
+  console.log(("  _   _               "), '\n', ("( ) ( )              "), '\n', ("| |_| |   __   _   _ "), '\n', ("|  _  | /'__`\\( ) ( )"), '\n', ("| | | |(  ___/| (_) |"), '\n', ("(_) (_)`\\____)`\\__, |"), '\n', ("              ( )_| |"), '\n', ("              `\\___/'"));
   //console.log("N'hésitez pas a me contacter si vous êtes interessés par mon profil ☺");
 
-  return(
+  return (
     <div className={styles.__home}>
       <div className={styles.__introduction}>
         <p>Hey, je suis Neka, developpeur fullstack principalement javascript.</p>

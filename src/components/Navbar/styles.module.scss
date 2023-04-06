@@ -10,20 +10,29 @@
   .__name {
     font-size: 1.5rem;
     padding: 0 20px;
+    a{
+      text-decoration: none;
+    }
   }
 
   .__links {
     font-size: 1rem;
 
-    a {
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 10px;
-      margin: 6px;
-      transition: 1s;
+    li{
+      display: inline-block;
+      list-style: none;
 
-      &:hover {
-        opacity: 0.6;
+      a {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 10px;
+        margin: 6px;
+        transition: 1s;
+        text-transform: uppercase;
+  
+        &:hover {
+          opacity: 0.4;
+        }
       }
     }
   }
