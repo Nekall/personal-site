@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import * as ReactDOM from 'react-dom';
 
 // Components
 import Navbar from "components/Navbar";
@@ -17,19 +17,21 @@ const App = () => (
   <div>
     <Router>
       <main>
-        <Switch>
-          <Route path="/" exact>
-            <Navbar />
-            <Home />
-          </Route>
-          <Route path="/projects" exact>
-            <Navbar />
-            <Projects />
-          </Route>
-          <Route>
-            <Error />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" exact element={
+            <>
+              <Navbar />
+              <Home />
+            </>
+          } />
+          <Route path="/projects" exact element={
+            <>
+              <Navbar />
+              <Projects />
+            </>
+          } />
+          <Route path="*" element={<Error />} />
+        </Routes>
       </main>
     </Router>
   </div>
