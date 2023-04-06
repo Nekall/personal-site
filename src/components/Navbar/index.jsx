@@ -1,20 +1,39 @@
 // Styles
 import styles from "./styles.module.scss";
 
-const Navbar=()=>(
-  <nav className={styles.navbar}>
-    <div>
-      <h1 className={styles.name}>Benjamin Anezo</h1>
-      <p className={`${styles.name} ${styles.front_name}`}>Benjamin Anezo</p>
-      <p className={styles.note}>DEVELOPPEUR FULLSTACK JUNIOR</p>
-    </div>
-    <div className={styles.anchors}>
-      <a href="#competences">competences</a>
-      <a href="#formation">formation</a>
-      <a href="#projects">projets</a>
-      <a href="#contact">contact</a>
-    </div>
-  </nav>
-);
+const Navbar = () => {
+
+  const links = [
+    {
+      name: "competences",
+      target: "/",
+    },
+    {
+      name: "formation",
+      target: "/",
+    },
+    {
+      name: "projets",
+      target: "/projects",
+    },
+    {
+      name: "contact",
+      target: "/",
+    },
+  ];
+
+  return (
+    <nav className={styles.__navbar}>
+      <h1 className={styles.__name}>Neka</h1>
+      <div className={styles.__links}>
+        {links.map(({ name, target }, index) => (
+          <a key={`link-${index}`} href={target}>
+            {name}
+          </a>
+        ))}
+      </div>
+    </nav>
+  )
+};
 
 export default Navbar;

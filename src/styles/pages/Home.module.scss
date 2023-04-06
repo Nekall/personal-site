@@ -1,0 +1,18 @@
+.__home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+
+    .__introduction{
+        border: solid 1px #fff;
+        border-radius: 8px;
+        max-width: 40%;
+        padding: 2%;
+
+        p{
+            margin-bottom: 2%;
+        }
+    }
+}

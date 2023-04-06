@@ -3,23 +3,15 @@ import ReactDOM from "react-dom";
 
 // Components
 import Navbar from "components/Navbar";
-import Footer from "components/Footer";
-import Name from "components/Name";
+//import Footer from "components/Footer";
 
 // Pages
-import Project from "pages/Project";
+import Projects from "pages/Projects";
 import Error from "pages/Error";
 import Home from "pages/Home";
 
-// Assets
-import silverfish from "./assets/images/projects/silverfish-screen.webp";
-import ronincode from "./assets/images/projects/ronincode-screen.webp";
-import notacine from "./assets/images/projects/notacine-screen.webp";
-import slickk from "./assets/images/projects/slickk-screen.webp";
-import savime from "./assets/images/projects/savime-screen.webp";
-
 // Styles
-import "./style/main.scss";
+import "./styles/main.scss";
 
 const App = () => (
   <div>
@@ -30,7 +22,11 @@ const App = () => (
             <Navbar />
             <Home />
           </Route>
-          <Route path="/ronincode" exact>
+          <Route path="/projects" exact>
+            <Navbar />
+            <Projects />
+          </Route>
+          {/*<Route path="/ronincode" exact>
             <Name />
             <Project name={"Projet RoninCode"} img={ronincode} alt={"ronincode"} link={"https://ronincode.vercel.app"} githubFullstack={"https://github.com/Nekall/ronincode"} description={"Plateforme web de mise en relation de mentors et d'apprentis en développement informatique proposant à ses membres des contenus et outils pédagogiques."} />
           </Route>
@@ -49,15 +45,13 @@ const App = () => (
           <Route path="/savime" exact>
             <Name />
             <Project name={"Projet Savime"} img={savime} alt={"savime"} link={"https://www.savime.tech"} githubFrontend={"https://github.com/Nekall/Savime-front"} githubBackend={"https://github.com/Nekall/Savime-back"} description={"«The time-saver for teams & companies.» - Application orienté RH, Savime seɪv.ɪm sert à créer une communication rapide, simple & sécurisée entre des employé·es et le département RH d'une entreprise. Que se soit le partage de documents, la gestion des congés ou l’accès aux informations importantes lié à l’entreprise & la carrière des employé·es. Cette application se veux clef en main."} />
-          </Route>
+</Route>*/}
           <Route>
-            <Name />
             <Error />
           </Route>
         </Switch>
       </main>
     </Router>
-    <Footer />
   </div>
 );
 

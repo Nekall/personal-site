@@ -1,11 +1,7 @@
 import React from "react";
 
-// Components
-import Projects from "../../components/Projects";
-import Contact from "../../components/Contact";
-import Formation from "../../components/Formation";
-import Skills from "../../components/Skills";
-import Introduction from "../../components/Introduction";
+// Styles
+import styles from "../../styles/pages/Home.module.scss"
 
 const Home=()=>{
   console.clear()
@@ -13,16 +9,14 @@ const Home=()=>{
   //console.log("N'hésitez pas a me contacter si vous êtes interessés par mon profil ☺");
 
   return(
-    <div className="container">
-      <Introduction />
-      <span id="competences"></span>
-      <Skills />
-      <span id="formation"></span>
-      <Formation />
-      <span id="projects"></span>
-      <Projects />
-      <span id="contact"></span>
-      <Contact />
+    <div className={styles.__home}>
+      <div className={styles.__introduction}>
+        <p>Hey, je suis Neka, developpeur fullstack principalement javascript.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus architecto accusantium ullam atque odio. Ipsa earum voluptas velit aliquid dolor.
+        </p>
+        <p>Cela fait des années que le monde du développement informatique m'attire. En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant le bootcamp de <a href="https://www.thehackingproject.org/" target="_blank" rel="noopener noreferrer">The Hacking Project</a> afin de devenir fullstack développeur. Suite à cette première formation et dans le but de me professionnaliser, je suis actuellement étudiant à la <a href="https://3wa.fr/" target="_blank" rel="noopener noreferrer">3w Academy</a>  en alternance chez <a href="https://www.slickk.eu/" target="_blank" rel="noopener noreferrer">Slickk</a>.</p>
+      </div>
     </div>
   )
 };

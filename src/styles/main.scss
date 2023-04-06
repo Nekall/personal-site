@@ -1,0 +1,37 @@
+@import "colors.scss";
+
+@font-face {
+  font-family: "Acherus Grotesque";
+  src: url("../assets/fonts/acherus-grotesque.woff");
+}
+
+@font-face {
+  font-family: "Poppins Black";
+  src: url("../assets/fonts/poppins-black.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Semibold";
+  src: url("../assets/fonts/poppins-semibold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Acherus Grotesque", Helvetica, Arial, sans-serif;
+  color: $color-white;
+  background-color: $color-black;
+  cursor: crosshair;
+}
+
+a {
+  color: $color-white;
+}
