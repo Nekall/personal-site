@@ -78,6 +78,11 @@
         .__content{
             .__header{
                 text-align: center;
+
+                .__logo{
+                    width: 180px;
+                }
+
                 .__close{
                     position: absolute;
                     top: 10px;
@@ -97,6 +102,23 @@
                         background-color: #151515;
                         opacity: 1;
                     }
+                }
+            }
+
+            .__body{
+
+                .__link{
+                    border: solid 1px red;
+                }
+
+                .__github{
+                    border: solid 1px green;
+
+                }
+
+                .__description{
+                    border: solid 1px blue;
+
                 }
             }
         }
