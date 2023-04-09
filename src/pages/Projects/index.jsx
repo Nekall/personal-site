@@ -20,6 +20,7 @@ import styles from "../../styles/pages/Projects.module.scss";
 const Projects = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [zoomModalIsOpen, setZoomModalIsOpen] = useState(false);
 
   const projects = [
     {
@@ -101,7 +102,7 @@ const Projects = () => {
               </button>
             </div>
             <div className={styles.__body}>
-              <div className={styles.__screenshot} onClick={() => alert("In Progress...")}>
+              <div className={styles.__screenshot} onClick={() => setZoomModalIsOpen(true)}>
                 <img src={selectedProject.screenshot} alt="Screenshot" />
               </div>
               <div className={styles.__details}>
@@ -121,6 +122,18 @@ const Projects = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+      {zoomModalIsOpen && (
+        <div className={styles.__zoom_modal}>
+          <div className={styles.__header}>
+            <button className={styles.__close} onClick={() => setZoomModalIsOpen(false)}>
+              <img src={cross} alt="close" />
+            </button>
+          </div>
+          <div className={styles.__screenshot}>
+            <img src={selectedProject.screenshot} alt={selectedProject.name} />
           </div>
         </div>
       )}

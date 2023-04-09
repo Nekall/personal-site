@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 // Assets
 import github from "../../assets/images/icons/github.svg";
 import twitter from "../../assets/images/icons/twitter.svg";
@@ -12,6 +14,7 @@ const Navbar = () => {
 
   const links = [
     {
+      reactRouter: true,
       name: "projets",
       link: "/projects",
       target: "_self",
@@ -19,6 +22,7 @@ const Navbar = () => {
       icon: folder
     },
     {
+      reactRouter: false,
       name: "github",
       link: "https://github.com/Nekall",
       target: "_blank",
@@ -26,6 +30,7 @@ const Navbar = () => {
       icon: github
     },
     {
+      reactRouter: false,
       name: "codepen",
       link: "https://codepen.io/LilNeka",
       target: "_blank",
@@ -33,6 +38,7 @@ const Navbar = () => {
       icon: codepen
     },
     {
+      reactRouter: false,
       name: "twitter",
       link: "https://twitter.com/36Qm7p5CGz",
       target: "_blank",
@@ -40,6 +46,7 @@ const Navbar = () => {
       icon: twitter
     },
     {
+      reactRouter: false,
       name: "linkedin",
       link: "https://www.linkedin.com/in/benjamin-anezo-40b83b216",
       target: "_blank",
@@ -51,23 +58,31 @@ const Navbar = () => {
   return (
     <nav className={styles.__navbar}>
       <h1 className={styles.__name}>
-        <a href="/">Neka</a>
+        <Link to="/">Neka</Link>
       </h1>
       <div className={styles.__links}>
-        {links.map(({ name, link, target, rel }, index) => (
+        {links.map(({ name, link, target, rel, reactRouter }, index) => (
           <li key={`link-${index}`}>
-            <a href={link} target={target} rel={rel}>
+            {!reactRouter ? <a href={link} target={target} rel={rel}>
               {name}
             </a>
+              : <Link to={link} target={target} rel={rel}>
+                {name}
+              </Link>
+            }
           </li>
         ))}
       </div>
       <div className={styles.__mobile_links}>
-        {links.map(({ name, link, target, rel, icon }, index) => (
+        {links.map(({ name, link, target, rel, icon, reactRouter }, index) => (
           <li key={`link-${index}`}>
-            <a href={link} target={target} rel={rel}>
+            {!reactRouter ? <a href={link} target={target} rel={rel}>
               {icon ? <img src={icon} alt={name} /> : name}
-            </a>
+            </a> :
+              <Link to={link} target={target} rel={rel}>
+                {icon ? <img src={icon} alt={name} /> : name}
+              </Link>
+            }
           </li>
         ))}
       </div>

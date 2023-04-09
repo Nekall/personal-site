@@ -99,6 +99,11 @@
                     display: flex;
                     padding: 2px;
 
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+
                     &:hover {
                         background-color: #151515;
                         opacity: 1;
@@ -162,6 +167,59 @@
                     }
                 }
             }
+        }
+    }
+
+    .__zoom_modal {
+        position: absolute;
+        z-index: 666;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+
+        .__header {
+            .__close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+                background-color: transparent;
+                color: #fff;
+                font-size: 1.5rem;
+                border: none;
+                border-radius: 4px;
+                transition: 0.8s;
+                opacity: 0.6;
+                display: flex;
+                padding: 2px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                &:hover {
+                    background-color: #151515;
+                    opacity: 1;
+                }
+            }
+        }
+
+        display: grid;
+        place-items: center;
+
+        .__screenshot {
+            margin: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                border-radius: 8px;
+            }
+
         }
     }
 
