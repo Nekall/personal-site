@@ -8,6 +8,12 @@ import slickk from "../../assets/images/projects/slickk-grey.webp";
 import silverfish from "../../assets/images/projects/silverfish-grey.webp";
 import cross from "../../assets/images/icons/cross.svg";
 
+import notacineScreenshot from "../../assets/images/projects/notacine-screen.webp";
+import savimeScreenshot from "../../assets/images/projects/savime-screen.webp";
+import ronincodeScreenshot from "../../assets/images/projects/ronincode-screen.webp";
+import slickkScreenshot from "../../assets/images/projects/slickk-screen.webp";
+import silverfishScreenshot from "../../assets/images/projects/silverfish-screen.webp";
+
 // Styles
 import styles from "../../styles/pages/Projects.module.scss";
 
@@ -23,7 +29,7 @@ const Projects = () => {
       image: savime,
       github: "https://github.com/Nekall/Savime-front",
       link: "https://www.savime.tech/",
-      screenshot: "",
+      screenshot: savimeScreenshot,
     },
     {
       name: "Slickk",
@@ -31,7 +37,7 @@ const Projects = () => {
       details: "Recrutez un Développeur Freelance à distance partout en Europe et constituez votre équipe en une journée seulement.",
       image: slickk,
       link: "https://www.slickk.eu/",
-      screenshot: "",
+      screenshot: slickkScreenshot,
     },
     {
       name: "RoninCode",
@@ -40,7 +46,7 @@ const Projects = () => {
       image: ronincode,
       github: "https://github.com/Nekall/ronincode",
       link: "https://ronincode.vercel.app/",
-      screenshot: "",
+      screenshot: ronincodeScreenshot,
     },
     {
       name: "NotaCine",
@@ -48,7 +54,7 @@ const Projects = () => {
       details: "Lorsque vous critiquez des films, vous devez prendre les évaluations très au sérieux. Cependant, nous pensons que la manière habituelle d'utiliser un chiffre pour évaluer un film est biaisée. C'est pourquoi nous avons créé NotaCine, un site web qui ne ressemble pas aux centaines d'autres services d'évaluation de films.",
       image: notacine,
       github: "https://github.com/Day-101/NotaCine",
-      screenshot: "",
+      screenshot: notacineScreenshot,
     },
     {
       name: "SilverfishInfestingSpace",
@@ -57,7 +63,7 @@ const Projects = () => {
       image: silverfish,
       github: "https://github.com/Nekall/Silverfish-Space",
       link: "https://silverfish.infesting.space/",
-      screenshot: "",
+      screenshot: silverfishScreenshot,
     },
   ];
 
@@ -89,24 +95,30 @@ const Projects = () => {
         <div className={styles.__modal}>
           <div className={styles.__content}>
             <div className={styles.__header}>
-            <img className={styles.__logo} src={selectedProject.image} alt={selectedProject.name} />
+              <img className={styles.__logo} src={selectedProject.image} alt={selectedProject.name} />
               <button className={styles.__close} onClick={() => setModalIsOpen(false)}>
                 <img src={cross} alt="close" />
               </button>
             </div>
             <div className={styles.__body}>
-              <p className={styles.__description}>{selectedProject.details}</p>
-              <div className={styles.__links}>
-                {selectedProject.github && (
-                  <a className={styles.__github} href={selectedProject.github} target="_blank" rel="noreferrer">
-                    Github
-                  </a>
-                )}
-                {selectedProject.link && (
-                  <a className={styles.__link} href={selectedProject.link} target="_blank" rel="noreferrer">
-                    Site
-                  </a>
-                )}
+              <div className={styles.__screenshot} onClick={() => alert("In Progress...")}>
+                <img src={selectedProject.screenshot} alt="Screenshot" />
+              </div>
+              <div className={styles.__details}>
+                <h2>{selectedProject.name}</h2>
+                <p className={styles.__description}>{selectedProject.details}</p>
+                <div className={styles.__links}>
+                  {selectedProject.github && (
+                    <a className={styles.__github} href={selectedProject.github} target="_blank" rel="noreferrer">
+                      Github
+                    </a>
+                  )}
+                  {selectedProject.link && (
+                    <a className={styles.__link} href={selectedProject.link} target="_blank" rel="noreferrer">
+                      Site
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -116,4 +128,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;

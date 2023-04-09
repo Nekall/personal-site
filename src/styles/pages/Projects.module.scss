@@ -1,20 +1,20 @@
-.__projects{
+.__projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 4%;
 
-    .__title{
+    .__title {
         padding: 2% 0;
     }
 
-    .__container{
+    .__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 8%;
 
-        .__project{
+        .__project {
             display: flex;
             align-items: center;
             padding: 2% 4%;
@@ -27,63 +27,64 @@
             border: none;
             cursor: pointer;
             text-align: left;
-            
-            .__logo{
+
+            .__logo {
                 width: 65px;
                 height: 65px;
                 border-radius: 2px;
 
-                img{
+                img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
             }
 
-            .__details{
+            .__details {
                 padding-left: 2%;
 
-                p:nth-child(2){
+                p:nth-child(2) {
                     opacity: 0.3;
                     transition: 1s;
                 }
             }
 
-            &:hover{
+            &:hover {
                 background-color: #151515;
                 opacity: 1;
 
-                .__details>p:nth-child(2){
-                        opacity: 0.6;
+                .__details>p:nth-child(2) {
+                    opacity: 0.6;
                 }
             }
         }
     }
 
     // MODAL
-    .__modal{
+    .__modal {
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         top: 20%;
         border-radius: 8px;
-        background: rgba( 0, 0, 0, 0.2 );
-        backdrop-filter: blur( 9.5px );
-        -webkit-backdrop-filter: blur( 9.5px );
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-        padding: 2% 10%;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(9.5px);
+        -webkit-backdrop-filter: blur(9.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 2% 6%;
         animation: openmodal 0.8s;
+        margin: 0 10%;
 
-        .__content{
-            .__header{
+        .__content {
+            .__header {
                 text-align: center;
 
-                .__logo{
+                .__logo {
                     width: 180px;
                 }
 
-                .__close{
+                .__close {
                     position: absolute;
                     top: 10px;
                     right: 10px;
@@ -98,27 +99,67 @@
                     display: flex;
                     padding: 2px;
 
-                    &:hover{
+                    &:hover {
                         background-color: #151515;
                         opacity: 1;
                     }
                 }
             }
 
-            .__body{
+            .__body {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2%;
 
-                .__link{
-                    border: solid 1px red;
+                .__screenshot {
+                    overflow: hidden;
+                    cursor: zoom-in;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        border-radius: 8px;
+                    }
                 }
 
-                .__github{
-                    border: solid 1px green;
-
+                .__description {
+                    letter-spacing: 0.05rem;
+                    margin-top: 1%;
+                    margin-right: 10%;
+                    text-align: justify
                 }
 
-                .__description{
-                    border: solid 1px blue;
+                .__link,
+                .__github {
+                    margin: 1% 0;
+                    padding: 1% 0%;
+                    border-radius: 2px;
+                    display: block;
+                    text-decoration: none;
+                    width: fit-content;
+                    font-weight: bold;
+                    transition: 0.6s;
+                    opacity: 0.6;
 
+                    &:before {
+                        content: ">";
+                        margin-right: -5px;
+                        font-size: 0.9rem;
+                        transition: 0.6s;
+                        opacity: 0;
+                    }
+
+                    &:hover::before {
+                        margin-right: 5px;
+                        opacity: 1;
+                    }
+
+                    &:hover {
+                        background-color: #151515;
+                        padding: 1%;
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -136,35 +177,59 @@
         }
     }
 
-    @media only screen and (max-width: 800px){
-        .__container{
+    @media only screen and (max-width: 1200px) {
+        .__modal {
+            margin: 0 2%;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .__container {
             grid-template-columns: 1fr;
             gap: 2%;
             padding: 6% 0;
         }
+
+        .__modal {
+            top: 10%;
+            margin: 2%;
+
+            .__content {
+                .__body {
+                    grid-template-columns: 1fr;
+                    gap: 2%;
+                    padding: 6% 0;
+
+                    .__description {
+                        letter-spacing: inherit;
+                        margin-right: inherit;
+                    }
+                }
+            }
+        }
     }
 
-    @media only screen and (max-width: 415px){
-        .__container{
-            .__project{
+    @media only screen and (max-width: 415px) {
+        .__container {
+            .__project {
                 padding: 2% 0;
 
-                .__logo{
+                .__logo {
                     width: 40px;
                     height: 40px;
                     border-radius: 2px;
-    
-                    img{
+
+                    img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                     }
                 }
-    
-                .__details{
+
+                .__details {
                     padding-left: 2%;
 
-                    h2{
+                    h2 {
                         font-size: 1.25rem;
                     }
                 }
