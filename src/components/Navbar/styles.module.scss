@@ -37,9 +37,43 @@
     }
   }
 
+  .__mobile_links{
+    display: none;
+
+    li{
+      display: inline-block;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        padding: 2px;
+        margin: 6px;
+        transition: 1s;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        img{
+          width: 25px;
+          height: 25px;
+        }
+  
+        &:hover {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 920px) {
     .__links {
       display: none;
+    }
+
+    .__mobile_links {
+      display: block;
     }
   }
 }
