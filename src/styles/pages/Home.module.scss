@@ -8,10 +8,38 @@
     .__introduction{
         max-width: 40%;
         padding: 2%;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
+        font-weight: lighter;
 
         p{
             margin-bottom: 2%;
         }
+
+        .__experience{
+            ol{
+                list-style: none;
+                li{
+                    &:before{
+                        content: "";
+                        display: inline-flex;
+                        background-color: #fff;
+                        height: 8px;
+                        width: 8px;
+                        border-radius: 2px;
+                        margin-right: 10px;
+                    }
+                    
+                    span{
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+    
+    .__stamp{
+        margin-top: 2%;
+        opacity: 0.6;
+        font-size: 0.9rem;
     }
 }
