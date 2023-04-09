@@ -121,7 +121,7 @@ const Home = () => {
             ))}
           </div>
 
-          <a className={styles.__cv} href="/Neka_Anezo_CV.png" target="_blank">Curriculum vitæ </a>
+          <a className={styles.__cv} href="/Neka_Anezo_CV.png" target="_blank" rel="noopener noreferrer">Curriculum vitæ </a>
           <p className={styles.__stamp}>2017-PRESENT, Have a nice dev ! ― Neka</p>
         </div>
       </div>
