@@ -24,12 +24,7 @@ const Home = () => {
       {
         title: "Piscine de 42",
         date: "2017",
-        details: "Piscine de 42, 2 mois de formation intensive en C."
-      },
-      {
-        title: "Grande Distribution",
-        date: "2018-2020",
-        details: "Travail dans une grande surface, en tant qu'employé libre service."
+        details: "En un mois, la Piscine de 42 permet de découvrir toutes les méthodes d’apprentissages de la formation : l’apprentissage peer-to-peer, le travail en groupe, les peer-évaluations ou encore la pédagogie par projets."
       },
       {
         title: "The Hacking Project",
@@ -37,7 +32,12 @@ const Home = () => {
         details: "Formation intensive de 6 mois en développement web."
       },
       {
-        title: "3W Academy ✕ Slickk",
+        title: "3W Academy",
+        date: "2022-PRESENT",
+        details: "Alternance de 2 années en développement web."
+      },
+      {
+        title: "Slickk",
         date: "2022-PRESENT",
         details: "Alternance de 2 années en développement web."
       },
@@ -54,6 +54,11 @@ const Home = () => {
         alt: "CSS3",
         title: "CSS3",
         icon: css3,
+      },
+      {
+        alt: "SASS",
+        title: "SASS",
+        icon: sass,
       },
       {
         alt: "Javascript",
@@ -81,11 +86,6 @@ const Home = () => {
         icon: nodejs,
       },
       {
-        alt: "SASS",
-        title: "SASS",
-        icon: sass,
-      },
-      {
         alt: "Strapi",
         title: "Strapi",
         icon: strapi,
@@ -95,9 +95,8 @@ const Home = () => {
   return (
     <div className={styles.__home}>
       <div className={styles.__introduction}>
-        <p>Hey, je suis Neka, developpeur fullstack principalement javascript.</p>
-        <p>Cela fait des années que le monde du développement informatique m'attire. En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant le bootcamp de <a href="https://www.thehackingproject.org/" target="_blank" rel="noopener noreferrer">The Hacking Project</a> afin de devenir fullstack développeur. Suite à cette première formation et dans le but de me professionnaliser, je suis actuellement étudiant à la <a href="https://3wa.fr/" target="_blank" rel="noopener noreferrer">3w Academy</a>  en alternance chez <a href="https://www.slickk.eu/" target="_blank" rel="noopener noreferrer">Slickk</a>.</p>
-        <p>Je vis actuellement à Paris.</p>
+        <p>Hey, je suis Neka, développeur fullstack spécialisé en JavaScript.</p>
+        <p>Bien que mon intérêt pour le développement informatique remonte à plusieurs années, c'est lors de la piscine de l'école 42 en 2017 que j'ai eu la confirmation que c'était vraiment ma passion. Après avoir économisé de l'argent tout en travaillant dans une grande surface, j'ai saisi l'opportunité de rejoindre le bootcamp de <a href="https://www.thehackingproject.org/" target="_blank" rel="noopener noreferrer">The Hacking Project</a> pour une durée de 6 mois en 2021 pour me former intensivement à la programmation informatique. Pour continuer à me professionnaliser, j'ai ensuite rejoint l'école <a href="https://3wa.fr/" target="_blank" rel="noopener noreferrer">3w Academy</a> en alternance chez <a href="https://www.slickk.eu/" target="_blank" rel="noopener noreferrer">Slickk</a>, dans le cadre d'une année de préparation à un Brevet de Technicien Supérieur. J'ai poursuivi mon parcours en restant une année supplémentaire pour obtenir une licence professionnelle en développement web.</p>
         <div>
           <div className={styles.__experience}>
             <h2>Expériences</h2>
@@ -120,7 +119,6 @@ const Home = () => {
               <img className={styles.__icon} title={title} key={`skill-${index}`} src={icon} alt={alt} />
             ))}
           </div>
-
           <a className={styles.__cv} href="/Neka_Anezo_CV.png" target="_blank" rel="noopener noreferrer">Curriculum vitæ </a>
           <p className={styles.__stamp}>2017-PRESENT, Have a nice dev ! ― Neka</p>
         </div>

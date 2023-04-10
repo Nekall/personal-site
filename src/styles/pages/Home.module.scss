@@ -19,7 +19,7 @@
         .__experience {
             margin: 2% 0;
 
-            h2{
+            h2 {
                 opacity: 0.6;
                 text-decoration: underline;
                 padding: 10px 0;
@@ -31,7 +31,7 @@
                 li {
                     width: fit-content;
 
-                    details{
+                    details {
                         font-family: "Sofia Sans Condensed Light", Helvetica, Arial, sans-serif;
                         max-width: 600px;
                     }
@@ -48,13 +48,14 @@
             }
         }
 
-        .__skills{
-            h2{
+        .__skills {
+            h2 {
                 text-decoration: underline;
                 opacity: 0.6;
                 padding: 10px 0;
             }
-            .__icon{
+
+            .__icon {
                 width: 25px;
                 height: 25px;
                 margin-right: 10px;
@@ -62,7 +63,7 @@
         }
     }
 
-    .__cv{
+    .__cv {
         margin: 1% 0;
         padding: 1% 0%;
         border-radius: 2px;
