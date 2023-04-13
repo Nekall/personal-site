@@ -30,7 +30,6 @@ const App = () => {
     }else{
       setLocalLang(localLang);
       localStorage.setItem("__lang__neka.dev", localLang);
-      console.log("lcoalLang", localLang);
     }
   }, [localLang, userLang])
 

@@ -68,7 +68,7 @@ const Navbar = ({ lang, setLang }) => {
       <h1 className={styles.__name}>
         <Link to="/">Neka</Link>
       </h1>
-      <div className={styles.__links}>
+      <ul className={styles.__links}>
         {links.map(({ name, link, target, rel, reactRouter }, index) => (
           <li key={`link-${index}`}>
             {!reactRouter ? <a href={link} target={target} rel={rel}>
@@ -80,11 +80,13 @@ const Navbar = ({ lang, setLang }) => {
             }
           </li>
         ))}
+        <li>
         <button className={styles.__lang} onClick={() => changeLang()}>
           {lang === "fr" ? "EN" : "FR"}
         </button>
-      </div>
-      <div className={styles.__mobile_links}>
+        </li>
+      </ul>
+      <ul className={styles.__mobile_links}>
         {links.map(({ name, link, target, rel, icon, reactRouter }, index) => (
           <li key={`link-${index}`}>
             {!reactRouter ? <a href={link} target={target} rel={rel}>
@@ -96,10 +98,12 @@ const Navbar = ({ lang, setLang }) => {
             }
           </li>
         ))}
+        <li>
         <button className={styles.__lang} onClick={() => changeLang()}>
           {lang === "fr" ? "EN" : "FR"}
         </button>
-      </div>
+        </li>
+      </ul>
     </nav>
   )
 };
