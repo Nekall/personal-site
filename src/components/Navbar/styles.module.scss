@@ -35,6 +35,21 @@
         }
       }
     }
+
+    .__lang{
+      padding: 5px 6px;
+      margin: 6px;
+      text-transform: uppercase;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 1s;
+      border: none;
+      font-family: "Poppins Black";
+
+      &:hover {
+        opacity: 0.4;
+      }
+    }
   }
 
   .__mobile_links{

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import * as ReactDOM from 'react-dom';
 
@@ -13,28 +14,49 @@ import Home from "pages/Home";
 // Styles
 import "./styles/main.scss";
 
-const App = () => (
-  <div>
-    <Router>
-      <main>
-        <Routes>
-          <Route path="/" exact element={
-            <>
-              <Navbar />
-              <Home />
-            </>
-          } />
-          <Route path="/projects" exact element={
-            <>
-              <Navbar />
-              <Projects />
-            </>
-          } />
-          <Route path="*" element={<Error />} />
-        </Routes>
-      </main>
-    </Router>
-  </div>
-);
+const App = () => {
+  const userLang = navigator.language;
+  const [localLang, setLocalLang] = useState(localStorage.getItem("__lang__neka.dev"));
+
+  useEffect(() => {
+    if (!localLang || (!localLang.includes("en") && !localLang.includes("fr"))) {
+      if (userLang.includes("fr")) {
+        setLocalLang("fr");
+        localStorage.setItem("__lang__neka.dev", "fr");
+      } else {
+        setLocalLang("en");
+        localStorage.setItem("__lang__neka.dev", "en");
+      }
+    }else{
+      setLocalLang(localLang);
+      localStorage.setItem("__lang__neka.dev", localLang);
+      console.log("lcoalLang", localLang);
+    }
+  }, [localLang, userLang])
+
+  return (
+    <div>
+      <Router>
+        <main>
+          <Routes>
+            <Route path="/" exact element={
+              <>
+                <Navbar lang={localLang} setLang={setLocalLang} />
+                <Home lang={localLang} />
+              </>
+            } />
+            <Route path="/projects" exact element={
+              <>
+                <Navbar lang={localLang} setLang={setLocalLang} />
+                <Projects lang={localLang} />
+              </>
+            } />
+            <Route path="*" element={<Error lang={localLang} />} />
+          </Routes>
+        </main>
+      </Router>
+    </div>
+  )
+};
 
 ReactDOM.render(<App />, document.getElementById('root'));

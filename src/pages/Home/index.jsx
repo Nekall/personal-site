@@ -14,32 +14,32 @@ import strapi from "../../assets/images/technologies/strapi.svg";
 // Styles
 import styles from "../../styles/pages/Home.module.scss"
 
-const Home = () => {
-  console.clear()
-  console.log(("  _   _               "), '\n', ("( ) ( )              "), '\n', ("| |_| |   __   _   _ "), '\n', ("|  _  | /'__`\\( ) ( )"), '\n', ("| | | |(  ___/| (_) |"), '\n', ("(_) (_)`\\____)`\\__, |"), '\n', ("              ( )_| |"), '\n', ("              `\\___/'"));
+const Home = ({ lang }) => {
+  //console.clear()
+  //console.log(("  _   _               "), '\n', ("( ) ( )              "), '\n', ("| |_| |   __   _   _ "), '\n', ("|  _  | /'__`\\( ) ( )"), '\n', ("| | | |(  ___/| (_) |"), '\n', ("(_) (_)`\\____)`\\__, |"), '\n', ("              ( )_| |"), '\n', ("              `\\___/'"));
   //console.log("N'hésitez pas a me contacter si vous êtes interessés par mon profil ☺");
 
   const experience =
     [
       {
-        title: "Piscine de 42",
+        title: lang === "fr" ? "Piscine de 42" : "Piscine at 42",
         date: "2017",
-        details: "En un mois, la Piscine de 42 permet de découvrir toutes les méthodes d’apprentissages de la formation : l’apprentissage peer-to-peer, le travail en groupe, les peer-évaluations ou encore la pédagogie par projets."
+        details: lang === "fr" ? "En un mois, la Piscine de 42 permet de découvrir toutes les méthodes d’apprentissages de la formation : l’apprentissage peer-to-peer, le travail en groupe, les peer-évaluations ou encore la pédagogie par projets." : "In one month, the Piscine at 42 allows you to discover all the learning methods of the training: peer-to-peer learning, group work, peer-assessments or project-based teaching."
       },
       {
         title: "The Hacking Project",
         date: "2021",
-        details: "Formation intensive de 6 mois en développement web."
+        details: lang === "fr" ? "Formation intensive de 6 mois en développement web." : "6 months intensive training in web development."
       },
       {
         title: "3W Academy",
         date: "2022-PRESENT",
-        details: "Alternance de 2 années en développement web."
+        details: lang === "fr" ? "Alternance de 2 années en développement web." : "2 year internship in web development."
       },
       {
         title: "Slickk",
         date: "2022-PRESENT",
-        details: "Alternance de 2 années en développement web."
+        details: lang === "fr" ? "Alternance de 2 années en développement web." : "2 year internship in web development."
       },
     ]
 
@@ -95,11 +95,11 @@ const Home = () => {
   return (
     <div className={styles.__home}>
       <div className={styles.__introduction}>
-        <p>Hey, je suis Neka, développeur fullstack spécialisé en JavaScript.</p>
-        <p>Bien que mon intérêt pour le développement informatique remonte à plusieurs années, c'est lors de la piscine de l'école 42 en 2017 que j'ai eu la confirmation que c'était vraiment ma passion. Après avoir économisé de l'argent tout en travaillant dans une grande surface, j'ai saisi l'opportunité de rejoindre le bootcamp de <a href="https://www.thehackingproject.org/" target="_blank" rel="noopener noreferrer">The Hacking Project</a> pour une durée de 6 mois en 2021 pour me former intensivement à la programmation informatique. Pour continuer à me professionnaliser, j'ai ensuite rejoint l'école <a href="https://3wa.fr/" target="_blank" rel="noopener noreferrer">3w Academy</a> en alternance chez <a href="https://www.slickk.eu/" target="_blank" rel="noopener noreferrer">Slickk</a>, dans le cadre d'une année de préparation à un Brevet de Technicien Supérieur. J'ai poursuivi mon parcours en restant une année supplémentaire pour obtenir une licence professionnelle en développement web.</p>
+        <p>{lang === "fr" ? "Hey, je suis Neka, développeur fullstack spécialisé en JavaScript." : "Hey, I'm Neka, fullstack developer specialized in JavaScript."}</p>
+        <p>{lang === "fr" ? <>Bien que mon intérêt pour le développement informatique remonte à plusieurs années, c'est lors de la piscine de l'école 42 en 2017 que j'ai eu la confirmation que c'était vraiment ma passion. Après avoir économisé de l'argent tout en travaillant dans une grande surface, j'ai saisi l'opportunité de rejoindre le bootcamp de <a href="https://www.thehackingproject.org/" target="_blank" rel="noopener noreferrer">The Hacking Project</a> pour une durée de 6 mois en 2021 pour me former intensivement à la programmation informatique. Pour continuer à me professionnaliser, j'ai ensuite rejoint l'école <a href="https://3wa.fr/" target="_blank" rel="noopener noreferrer">3w Academy</a> en alternance chez <a href="https://www.slickk.eu/" target="_blank" rel="noopener noreferrer">Slickk</a>, dans le cadre d'une année de préparation à un Brevet de Technicien Supérieur. J'ai poursuivi mon parcours en restant une année supplémentaire pour obtenir une licence professionnelle en développement web.</> : <>Although my interest in IT development goes back several years, it was during the 42 school pool in 2017 that I got the confirmation that it was really my passion. After saving money while working in a big box store, I took the opportunity to join <a href="https://www.thehackingproject.org/" target="_blank" rel="noopener noreferrer">The Hacking Project</a>'s bootcamp for 6 months in 2021 to intensively train myself in computer programming. To continue to professionalize myself, I then joined the <a href="https://3wa.fr/" target="_blank" rel="noopener noreferrer">3w Academy</a> school in a work-study program at <a href="https://www.slickk.eu/" target="_blank" rel="noopener noreferrer">Slickk</a>, as part of a year of preparation for a advanced technician's certificate. I continued my studies by staying an extra year to obtain a professional license in web development.</>}</p>
         <div>
           <div className={styles.__experience}>
-            <h2>Expériences</h2>
+            <h2>{lang === "fr" ? "Expériences" : "Experiences"}</h2>
             <ol>
               {experience.map(({ title, date, details }, index) => (
                 <li key={`exp-${index}`}>
@@ -114,12 +114,12 @@ const Home = () => {
             </ol>
           </div>
           <div className={styles.__skills}>
-            <h2>Compétences</h2>
+            <h2>{lang === "fr" ? "Compétences" : "Skills"}</h2>
             {skills.map(({ alt, icon, title }, index) => (
               <img className={styles.__icon} title={title} key={`skill-${index}`} src={icon} alt={alt} />
             ))}
           </div>
-          <a className={styles.__cv} href="/Neka_Anezo_CV.png" target="_blank" rel="noopener noreferrer">Curriculum vitæ </a>
+          <a className={styles.__cv} href="/Neka_Anezo_CV.png" target="_blank" rel="noopener noreferrer">Curriculum vitæ</a>
           <p className={styles.__stamp}>2017-PRESENT, Have a nice dev ! ― Neka</p>
         </div>
       </div>

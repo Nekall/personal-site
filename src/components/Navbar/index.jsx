@@ -10,12 +10,12 @@ import folder from "../../assets/images/icons/folder.svg";
 // Styles
 import styles from "./styles.module.scss";
 
-const Navbar = () => {
+const Navbar = ({ lang, setLang }) => {
 
   const links = [
     {
       reactRouter: true,
-      name: "projets",
+      name: lang === "fr" ? "projets" : "projects",
       link: "/projects",
       target: "_self",
       rel: "",
@@ -55,6 +55,14 @@ const Navbar = () => {
     },
   ];
 
+  const changeLang = () => {
+    if (lang === "fr") {
+      setLang("en");
+    } else {
+      setLang("fr");
+    }
+  }
+
   return (
     <nav className={styles.__navbar}>
       <h1 className={styles.__name}>
@@ -72,6 +80,9 @@ const Navbar = () => {
             }
           </li>
         ))}
+        <button className={styles.__lang} onClick={() => changeLang()}>
+          {lang === "fr" ? "EN" : "FR"}
+        </button>
       </div>
       <div className={styles.__mobile_links}>
         {links.map(({ name, link, target, rel, icon, reactRouter }, index) => (
@@ -85,6 +96,9 @@ const Navbar = () => {
             }
           </li>
         ))}
+        <button className={styles.__lang} onClick={() => changeLang()}>
+          {lang === "fr" ? "EN" : "FR"}
+        </button>
       </div>
     </nav>
   )

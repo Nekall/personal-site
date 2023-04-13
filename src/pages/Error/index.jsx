@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 // Styles
 import styles from "../../styles/pages/Error.module.scss";
 
-const Error = () => {
+const Error = ({ lang }) => {
   const [timer, setTimer] = useState(10);
   const navigate = useNavigate();
 
@@ -19,17 +19,26 @@ const Error = () => {
     return navigate("/");
   }
 
+  const { title, subtitle, back, sentence1, sentence2, sentence3 } = {
+    title: lang === "fr" ? "Erreur 404" : "Error 404",
+    subtitle: lang === "fr" ? "Page non trouvée" : "Page not found",
+    sentence1: lang === "fr" ? "Vous allez être redirigé vers la page d'accueil dans" : "You will be redirected to the home page in",
+    sentence2: lang === "fr" ? "secondes" : "seconds",
+    sentence3: lang === "fr" ? "ou vous pouvez cliquer sur le lien suivant" : "or you can click on the following link",
+    back: lang === "fr" ? "Retour à la page d'accueil" : "Back to home page"
+  }
+
   return (
     <div className={styles.__error}>
       <div>
-        <h1>Erreur 404</h1>
-        <p>Page non trouvée</p>
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
         <div className={styles.__timer}>
-          <p>Vous allez être redirigé vers la page d'accueil dans {timer} secondes</p>
-          <p>ou vous pouvez cliquer sur le lien suivant</p>
+          <p>{sentence1} {timer} {sentence2}</p>
+          <p>{sentence3}</p>
         </div>
         <Link to="/">
-          <p>Retour à la page d'accueil</p>
+          <p>{back}</p>
         </Link>
       </div>
     </div>

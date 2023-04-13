@@ -17,7 +17,7 @@ import silverfishScreenshot from "../../assets/images/projects/silverfish-screen
 // Styles
 import styles from "../../styles/pages/Projects.module.scss";
 
-const Projects = () => {
+const Projects = ({ lang }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const [zoomModalIsOpen, setZoomModalIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const Projects = () => {
     {
       name: "Savime",
       description: "«The time-saver for teams & companies.»",
-      details: "«The time-saver for teams & companies.» - Application orienté RH, Savime sert à créer une communication rapide, simple & sécurisée entre des employé·es et le département RH d'une entreprise. Que se soit le partage de documents, la gestion des congés ou l’accès aux informations importantes lié à l’entreprise & la carrière des employé·es. Cette application se veux clef en main.",
+      details: lang === "fr" ? "«The time-saver for teams & companies.» - Application orienté RH, Savime sert à créer une communication rapide, simple & sécurisée entre des employé·es et le département RH d'une entreprise. Que se soit le partage de documents, la gestion des congés ou l’accès aux informations importantes lié à l’entreprise & la carrière des employé·es. Cette application se veux clef en main." : "Savime is an HR oriented application used to create a fast, simple & secure communication between employees and the HR department of a company. Whether it's document sharing, leave management or access to important information related to the company & the employees' career. This application is a turnkey solution.",
       image: savime,
       github: "https://github.com/Nekall/Savime-front",
       link: "https://www.savime.tech/",
@@ -35,15 +35,15 @@ const Projects = () => {
     {
       name: "Slickk",
       description: "Only Skills Matter",
-      details: "Recrutez un Développeur Freelance à distance partout en Europe et constituez votre équipe en une journée seulement.",
+      details: lang === "fr" ? "Recrutez un Développeur Freelance à distance partout en Europe et constituez votre équipe en une journée seulement." : "Recruit a remote Freelance Developer anywhere in Europe and build your team in just one day.",
       image: slickk,
       link: "https://www.slickk.eu/",
       screenshot: slickkScreenshot,
     },
     {
       name: "RoninCode",
-      description: "Site mentorat et communauté de développeurs",
-      details: "Plateforme web de mise en relation de mentors et d'apprentis en développement informatique proposant à ses membres des contenus et outils pédagogiques.",
+      description: lang === "fr" ? "Site mentorat et communauté de développeurs" : "Mentoring site and developer community",
+      details: lang === "fr" ? "Plateforme web de mise en relation de mentors et d'apprentis en développement informatique proposant à ses membres des contenus et outils pédagogiques." : "Web-based platform for connecting IT development mentors and apprentices offering educational content and tools to its members.",
       image: ronincode,
       github: "https://github.com/Nekall/ronincode",
       link: "https://ronincode.vercel.app/",
@@ -51,16 +51,16 @@ const Projects = () => {
     },
     {
       name: "NotaCine",
-      description: "Site de notes de films",
-      details: "Lorsque vous critiquez des films, vous devez prendre les évaluations très au sérieux. Cependant, nous pensons que la manière habituelle d'utiliser un chiffre pour évaluer un film est biaisée. C'est pourquoi nous avons créé NotaCine, un site web qui ne ressemble pas aux centaines d'autres services d'évaluation de films.",
+      description: lang === "fr" ? "Site de notes de films" : "Film notes site",
+      details: lang === "fr" ? "Lorsque vous critiquez des films, vous devez prendre les évaluations très au sérieux. Cependant, nous pensons que la manière habituelle d'utiliser un chiffre pour évaluer un film est biaisée. C'est pourquoi nous avons créé NotaCine, un site web qui ne ressemble pas aux centaines d'autres services d'évaluation de films." : "When you review films, you have to take the ratings very seriously. However, we think the usual way of using a number to rate a movie is biased. That's why we created NotaCine, a website that is unlike the hundreds of other movie rating services.",
       image: notacine,
       github: "https://github.com/Day-101/NotaCine",
       screenshot: notacineScreenshot,
     },
     {
       name: "SilverfishInfestingSpace",
-      description: "Site de communauté Minecraft",
-      details: "Site de communauté Minecraft, quelques pages de 'recettes' ajouté dans le jeu, et la possibilité de télécharger des textures personnalisées.",
+      description: lang === "fr" ? "Site de communauté Minecraft" : "Minecraft community website",
+      details: lang === "fr" ? "Site de communauté Minecraft, quelques pages de 'recettes' ajouté dans le jeu, et la possibilité de télécharger des textures personnalisées." : "Minecraft community website, some pages of 'recipes' added in the game, and the ability to download custom textures.",
       image: silverfish,
       github: "https://github.com/Nekall/Silverfish-Space",
       link: "https://silverfish.infesting.space/",
@@ -69,12 +69,9 @@ const Projects = () => {
   ];
 
   const openModal = (name) => {
-    console.log(name);
     setSelectedProject(projects.find((project) => project.name === name));
     setModalIsOpen(true);
   }
-  console.log(selectedProject);
-
 
   return (
     <div className={styles.__projects}>
