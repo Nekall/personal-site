@@ -27,6 +27,7 @@
             border: none;
             cursor: pointer;
             text-align: left;
+            color: #999999;
 
             .__logo {
                 width: 65px;
@@ -52,6 +53,7 @@
             &:hover {
                 background-color: #151515;
                 opacity: 1;
+                color: #fff;
 
                 .__details>p:nth-child(2) {
                     opacity: 0.6;
@@ -90,7 +92,6 @@
                     right: 10px;
                     cursor: pointer;
                     background-color: transparent;
-                    color: #fff;
                     font-size: 1.5rem;
                     border: none;
                     border-radius: 2px;
@@ -98,15 +99,17 @@
                     opacity: 0.6;
                     display: flex;
                     padding: 2px;
-
+                    color: #999999;
+                    
                     img {
                         width: 30px;
                         height: 30px;
                     }
-
+                    
                     &:hover {
                         background-color: #151515;
                         opacity: 1;
+                        color: #fff;
                     }
                 }
             }
@@ -178,6 +181,8 @@
         height: 100vh;
         top: 0;
         left: 0;
+        display: grid;
+        place-items: center;
 
         .__header {
             .__close {
@@ -186,7 +191,6 @@
                 right: 20px;
                 cursor: pointer;
                 background-color: transparent;
-                color: #fff;
                 font-size: 1.5rem;
                 border: none;
                 border-radius: 4px;
@@ -194,24 +198,24 @@
                 opacity: 0.6;
                 display: flex;
                 padding: 2px;
-
+                color: #999999;
+                
                 img {
                     width: 40px;
                     height: 40px;
                 }
-
+                
                 &:hover {
                     background-color: #151515;
                     opacity: 1;
+                    color: #fff;
                 }
             }
         }
 
-        display: grid;
-        place-items: center;
-
         .__screenshot {
             margin: auto;
+            animation: zoom-in 0.8s forwards ease-in-out;
 
             img {
                 width: 100%;
@@ -232,6 +236,16 @@
         100% {
             opacity: 1;
             transform: translate(0, 0);
+        }
+    }
+
+    @keyframes zoom-in {
+        0% {
+            transform: scale(0.4);
+        }
+
+        100% {
+            transform: scale(1);
         }
     }
 
