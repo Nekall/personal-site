@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 
 // Assets
 import github from "../../assets/images/icons/github.svg";
-import twitter from "../../assets/images/icons/twitter.svg";
 import linkedin from "../../assets/images/icons/linkedin.svg";
 import codepen from "../../assets/images/icons/codepen.svg";
 import folder from "../../assets/images/icons/folder.svg";
@@ -36,14 +35,6 @@ const Navbar = ({ lang, setLang }) => {
       target: "_blank",
       rel: "noopener noreferrer",
       icon: codepen
-    },
-    {
-      reactRouter: false,
-      name: "twitter",
-      link: "https://twitter.com/36Qm7p5CGz",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      icon: twitter
     },
     {
       reactRouter: false,
