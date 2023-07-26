@@ -39,4 +39,4 @@ Je bidouille de l'informatique depuis mon adolescence, demonter des ordinateurs 
 contact@neka.dev
 Paris 18  
 ___
-Pour plus d'information n'hésitez pas à visiter [mon site](https://neka.dev/) ou m'[envoyer un mail](mailto:benjamin.anezo@protonmail.com).
+Pour plus d'information n'hésitez pas à visiter [mon site](https://neka.dev/) ou m'[envoyer un mail](mailto:neka.anezo@protonmail.com).
