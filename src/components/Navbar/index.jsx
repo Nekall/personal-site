@@ -39,7 +39,7 @@ const Navbar = ({ lang, setLang }) => {
     {
       reactRouter: false,
       name: "linkedin",
-      link: "https://www.linkedin.com/in/benjamin-anezo/",
+      link: "https://www.linkedin.com/in/neka-anezo/",
       target: "_blank",
       rel: "noopener noreferrer",
       icon: linkedin
