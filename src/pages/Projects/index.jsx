@@ -29,7 +29,7 @@ const Projects = ({ lang }) => {
       details: lang === "fr" ? "«The time-saver for teams & companies.» - Application orienté RH, Savime sert à créer une communication rapide, simple & sécurisée entre des employé·es et le département RH d'une entreprise. Que se soit le partage de documents, la gestion des congés ou l’accès aux informations importantes lié à l’entreprise & la carrière des employé·es. Cette application se veux clef en main." : "Savime is an HR oriented application used to create a fast, simple & secure communication between employees and the HR department of a company. Whether it's document sharing, leave management or access to important information related to the company & the employees' career. This application is a turnkey solution.",
       image: savime,
       github: "https://github.com/Nekall/Savime-front",
-      link: "https://www.savime.tech/",
+      link: "https://savime.neka.dev/",
       screenshot: savimeScreenshot,
     },
     {
