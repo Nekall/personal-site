@@ -5,11 +5,13 @@ Fait avec* <span style="color:red;">❤</span>
 
 ## A propos
 
-Cela fait des années que le monde du développement informatique m'attire. En 2021 j'ai enfin sauté le pas, en quittant mon ancien travail dans l'agroalimentaire et en rejoignant le bootcamp de [The Hacking Project](https://www.thehackingproject.org/) durant 6 mois. Suite à cette première formation et dans le but de me professionnaliser, je suis actuellement étudiant à la [3w Academy](https://3wa.fr/) en alternance chez Slickk.
+Hey, je suis Neka, développeur fullstack spécialisé en JavaScript.
+
+Bien que mon intérêt pour le développement informatique remonte à plusieurs années, c'est lors de la piscine de l'école 42 en 2017 que j'ai eu la confirmation que c'était vraiment ma passion. Après avoir économisé de l'argent tout en travaillant dans une grande surface, j'ai saisi l'opportunité de rejoindre le bootcamp de [The Hacking Project](https://www.thehackingproject.org/) pour une durée de 6 mois en 2021 pour me former intensivement à la programmation informatique. Pour continuer à me professionnaliser, j'ai ensuite rejoint l'école [3w Academy](https://3wa.fr/) en alternance chez [Slickk](https://www.slickk.eu/), dans le cadre d'une année de préparation à un Brevet de Technicien Supérieur. J'ai poursuivi mon parcours en restant une année supplémentaire pour obtenir une licence professionnelle en développement web.
 
 ## Mes compétences
 
-Programmation en HTML, CSS, Sass, Bash, JavaScript, React.  
+Programmation en HTML, CSS, Sass, Bash, JavaScript, React, NextJS, React Native.      
 Éditions, modifications, retouches sur PhotoShop.
 
 ## Formation
@@ -31,12 +33,16 @@ Programmation en HTML, CSS, Sass, Bash, JavaScript, React.
       ╞Reconversion professionnelle en format Bootcamp.  
       ╘Développeur fullstack.  
 
+2017  
+╘╤ Piscine de 42  
+      ╘ Les bases de la programmation en C. 
+
 ## Intérêt
 Je bidouille de l'informatique depuis mon adolescence, demonter des ordinateurs à écrire des scripts, dès que j’ai une idée, je la teste.
 
 ## Infos
 [neka.dev](https://neka.dev/)  
-contact@neka.dev
+<a href="mailto:contact+github@neka.dev">contact@neka.dev</a>      
 Paris 18  
 ___
-Pour plus d'information n'hésitez pas à visiter [mon site](https://neka.dev/) ou m'[envoyer un mail](mailto:neka.anezo@protonmail.com).
+Pour plus d'information n'hésitez pas à visiter [mon site](https://neka.dev/) ou m'[envoyer un mail](mailto:contact+github@neka.dev).
