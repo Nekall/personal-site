@@ -6,6 +6,7 @@ import savime from "../../assets/images/projects/savime-grey.webp";
 import ronincode from "../../assets/images/projects/ronincode-grey.webp";
 import slickk from "../../assets/images/projects/slickk-grey.webp";
 import silverfish from "../../assets/images/projects/silverfish-grey.webp";
+import umbrella from "../../assets/images/projects/umbrella-grey.webp";
 import cross from "../../assets/images/icons/cross.svg";
 
 import notacineScreenshot from "../../assets/images/projects/notacine-screen.webp";
@@ -13,6 +14,7 @@ import savimeScreenshot from "../../assets/images/projects/savime-screen.webp";
 import ronincodeScreenshot from "../../assets/images/projects/ronincode-screen.webp";
 import slickkScreenshot from "../../assets/images/projects/slickk-screen.webp";
 import silverfishScreenshot from "../../assets/images/projects/silverfish-screen.webp";
+import umbrellaScreenshot from "../../assets/images/projects/umbrella-screen.webp";
 
 // Styles
 import styles from "../../styles/pages/Projects.module.scss";
@@ -65,6 +67,15 @@ const Projects = ({ lang }) => {
       github: "https://github.com/Nekall/Silverfish-Space",
       link: "https://silverfish.infesting.space/",
       screenshot: silverfishScreenshot,
+    },
+    {
+      name: "Umbrella",
+      description: lang === "fr" ? "Site de prévention sur les mots de passe" : "Password prevention website",
+      details: lang === "fr" ? "Site de prévention sur les mots de passe. Ne prenez pas de risques avec la sécurité de vos informations personnelles en ligne. Adoptez ces bonnes pratiques de gestion de mots de passe pour protéger vos comptes." : "Password prevention website. Don't take risks with the security of your personal information online. Adopt these good password management practices to protect your accounts.",
+      image: umbrella,
+      github: "https://github.com/Nekall/Umbrella",
+      link: "https://umbrella-neka.vercel.app/",
+      screenshot: umbrellaScreenshot,
     },
   ];
 
