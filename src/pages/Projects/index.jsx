@@ -7,6 +7,7 @@ import ronincode from "../../assets/images/projects/ronincode-grey.webp";
 import slickk from "../../assets/images/projects/slickk-grey.webp";
 import silverfish from "../../assets/images/projects/silverfish-grey.webp";
 import umbrella from "../../assets/images/projects/umbrella-grey.webp";
+import tools from "../../assets/images/projects/tools-grey.webp";
 import cross from "../../assets/images/icons/cross.svg";
 
 import notacineScreenshot from "../../assets/images/projects/notacine-screen.webp";
@@ -15,6 +16,7 @@ import ronincodeScreenshot from "../../assets/images/projects/ronincode-screen.w
 import slickkScreenshot from "../../assets/images/projects/slickk-screen.webp";
 import silverfishScreenshot from "../../assets/images/projects/silverfish-screen.webp";
 import umbrellaScreenshot from "../../assets/images/projects/umbrella-screen.webp";
+import toolsScreenshot from "../../assets/images/projects/tools-screen.webp";
 
 // Styles
 import styles from "../../styles/pages/Projects.module.scss";
@@ -76,6 +78,14 @@ const Projects = ({ lang }) => {
       github: "https://github.com/Nekall/Umbrella",
       link: "https://umbrella-neka.vercel.app/",
       screenshot: umbrellaScreenshot,
+    },
+    {
+      name: "Neka's tools",
+      description: lang === "fr" ? "Site de listing d'outils" : "Tool listing site",
+      details: lang === "fr" ? "Site de listing d'outils. Je fais des outils pour me faciliter la vie, et je vous les partages." : "Tool listing site. I make tools to make my life easier, and I share them with you.",
+      image: tools,
+      link: "https://tools.neka.dev/",
+      screenshot: toolsScreenshot,
     },
   ];
 
