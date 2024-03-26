@@ -7,18 +7,18 @@ Fait avec* <span style="color:red;">❤</span>
 
 Hey, je suis Neka, développeur fullstack spécialisé en JavaScript.
 
-Bien que mon intérêt pour le développement informatique remonte à plusieurs années, c'est lors de la piscine de l'école 42 en 2017 que j'ai eu la confirmation que c'était vraiment ma passion. Après avoir économisé de l'argent tout en travaillant dans une grande surface, j'ai saisi l'opportunité de rejoindre le bootcamp de [The Hacking Project](https://www.thehackingproject.org/) pour une durée de 6 mois en 2021 pour me former intensivement à la programmation informatique. Pour continuer à me professionnaliser, j'ai ensuite rejoint l'école [3w Academy](https://3wa.fr/) en alternance chez [Slickk](https://www.slickk.eu/), dans le cadre d'une année de préparation à un Brevet de Technicien Supérieur. J'ai poursuivi mon parcours en restant une année supplémentaire pour obtenir une licence professionnelle en développement web.
+Bien que mon intérêt pour le développement informatique remonte à plusieurs années, c'est lors de la piscine de l'école 42 en 2017 que j'ai eu la confirmation que c'était vraiment ma passion. Après avoir économisé de l'argent tout en travaillant dans une grande surface, j'ai saisi l'opportunité de rejoindre le bootcamp de [The Hacking Project](https://www.thehackingproject.org/) pour une durée de 6 mois en 2021 pour me former intensivement à la programmation informatique. Pour continuer à me professionnaliser, j'ai ensuite rejoint l'école [3w Academy](https://3wa.fr/) en alternance chez [Slickk](https://www.slickk.eu/), dans le cadre d'une année de préparation à un Brevet de Technicien Supérieur. J'ai poursuivi mon parcours en restant une année supplémentaire dans le but d'obtenir une licence professionnelle en développement web.
 
 ## Mes compétences
 
-Programmation en HTML, CSS, Sass, Bash, JavaScript, React, NextJS, React Native.      
+Programmation en HTML, CSS, Sass, Bash, JavaScript, React, NextJS, React Native, Nodejs, ExpressJS.      
 Éditions, modifications, retouches sur PhotoShop.
 
-## Formation
+## Formation & Experience
 
-2023  
-╘╤ 3W Academy  
-      ╘ Développement fullstack en alternance.  
+2022-2024
+╘╤ 3W Academy ✕ Slickk 
+      ╘ Développement fullstack en alternance.   
 
 2021  
 ╘╤ Udemy  

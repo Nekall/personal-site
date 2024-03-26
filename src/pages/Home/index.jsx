@@ -15,9 +15,9 @@ import strapi from "../../assets/images/technologies/strapi.svg";
 import styles from "../../styles/pages/Home.module.scss"
 
 const Home = ({ lang }) => {
-  //console.clear()
-  //console.log(("  _   _               "), '\n', ("( ) ( )              "), '\n', ("| |_| |   __   _   _ "), '\n', ("|  _  | /'__`\\( ) ( )"), '\n', ("| | | |(  ___/| (_) |"), '\n', ("(_) (_)`\\____)`\\__, |"), '\n', ("              ( )_| |"), '\n', ("              `\\___/'"));
-  //console.log("N'hésitez pas a me contacter si vous êtes interessés par mon profil ☺");
+  console.clear()
+  console.log(("  _   _               "), '\n', ("( ) ( )              "), '\n', ("| |_| |   __   _   _ "), '\n', ("|  _  | /'__`\\( ) ( )"), '\n', ("| | | |(  ___/| (_) |"), '\n', ("(_) (_)`\\____)`\\__, |"), '\n', ("              ( )_| |"), '\n', ("              `\\___/'"));
+  console.log("N'hésitez pas a me contacter si vous êtes interessés par mon profil ☺");
 
   const experience =
     [
@@ -33,12 +33,12 @@ const Home = ({ lang }) => {
       },
       {
         title: "3W Academy",
-        date: "2022-PRESENT",
+        date: "2022-2024",
         details: lang === "fr" ? "Alternance de 2 années en développement web." : "2 year internship in web development."
       },
       {
         title: "Slickk",
-        date: "2022-PRESENT",
+        date: "2022-2024",
         details: lang === "fr" ? "Alternance de 2 années en développement web." : "2 year internship in web development."
       },
     ]
