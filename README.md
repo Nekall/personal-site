@@ -16,10 +16,10 @@ Programmation en HTML, CSS, Sass, Bash, JavaScript, React, NextJS, React Native,
 
 ## Formation & Experience
 
-2022-2024
-╘╤ 3W Academy ✕ Slickk 
-      ╘ Développement fullstack en alternance.   
-
+2022-2024      
+╘╤ 3W Academy ✕ Slickk       
+      ╘ Développement fullstack en alternance.         
+      
 2021  
 ╘╤ Udemy  
       ╘ NodeJS: Développer une API Rest avec MySQL.  
