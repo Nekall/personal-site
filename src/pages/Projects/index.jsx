@@ -50,7 +50,6 @@ const Projects = ({ lang }) => {
       details: lang === "fr" ? "Plateforme web de mise en relation de mentors et d'apprentis en développement informatique proposant à ses membres des contenus et outils pédagogiques." : "Web-based platform for connecting IT development mentors and apprentices offering educational content and tools to its members.",
       image: ronincode,
       github: "https://github.com/Nekall/ronincode",
-      link: "https://ronincode.vercel.app/",
       screenshot: ronincodeScreenshot,
     },
     {
