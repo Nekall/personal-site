@@ -1,9 +1,129 @@
 body {
   background-color: #000;
   color: #fff;
+  margin: 0;
+  height: 100vh;
+  cursor: crosshair;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Init spacing */
+h1,
+h2,
+p,
+ul {
+  margin: 0;
 }
 
 a {
   color: #fff;
   text-decoration: none;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+
+nav > h1 {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  font-size: 30px;
+}
+
+nav > ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+}
+nav > ul > li {
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav > ul > li > a:hover {
+  opacity: 0.4;
+  transition: 1s;
+}
+
+/* Main */
+main {
+  max-width: 50%;
+  margin: 100px auto 0 auto;
+  font-size: 18px;
+}
+
+h2 {
+  color: #999;
+  text-decoration: underline;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+
+/* Description */
+#description {
+  margin-top: 20px;
+}
+#description > p {
+  margin: 10px 0;
+}
+
+/* Experiencies */
+#experiencies {
+  padding-bottom: 10px;
+}
+
+#experiencies > div > details > summary {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Skills */
+#skills {
+}
+#skills > div {
+  display: flex;
+}
+
+#skills > div > img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+/* CV */
+#curriculum_vitae {
+  padding: 20px 0;
+}
+
+#curriculum_vitae > a {
+  color: #999;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+#curriculum_vitae > a:hover {
+  margin-left: 10px;
+  transition: 0.6s;
+  background-color: #151515;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+footer > p {
+  font-size: 15px;
+  opacity: 0.6;
 }
