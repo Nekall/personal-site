@@ -127,3 +127,41 @@ footer > p {
   font-size: 15px;
   opacity: 0.6;
 }
+
+/* Projects Page */
+#title_projects {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+#projects-section {
+}
+
+#projects {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px 10px;
+  padding: 0;
+}
+
+#projects li {
+  list-style-type: none;
+}
+
+#projects li button {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: #fff;
+  height: 80px;
+  background-color: #000;
+}
+
+#projects li button:hover {
+  background-color: #151515;
+}
