@@ -10,6 +10,7 @@ body {
 /* Init spacing */
 h1,
 h2,
+h3,
 p,
 ul {
   margin: 0;
@@ -160,8 +161,22 @@ footer > p {
   color: #fff;
   height: 80px;
   background-color: #000;
+  transition: 1s;
+  opacity: 0.6;
+  border-radius: 2px;
+  display: flex;
+  padding: 10px 15px;
+  text-align: start;
+  align-items: center;
 }
 
 #projects li button:hover {
   background-color: #151515;
+  opacity: 1;
+}
+
+#projects li button img {
+  height: 65px;
+  width: 65px;
+  margin-right: 10px;
 }
