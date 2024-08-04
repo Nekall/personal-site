@@ -1,7 +1,7 @@
 # Site Neka.Dev (portfolio)
 
-*Voici mon site de présentation (cv, portfolio). Il y a ma présentation, mon parcours & quelques uns de mes projets. C'est un site en React.js, codé from scratch.
-Fait avec* <span style="color:red;">❤</span>
+_Voici mon site de présentation (cv, portfolio). Il y a ma présentation, mon parcours & quelques uns de mes projets. C'est un site en HTMLxCSS, codé from scratch.
+Fait avec_ <span style="color:red;">❤</span>
 
 ## A propos
 
@@ -11,38 +11,41 @@ Bien que mon intérêt pour le développement informatique remonte à plusieurs 
 
 ## Mes compétences
 
-Programmation en HTML, CSS, Sass, Bash, JavaScript, React, NextJS, React Native, Nodejs, ExpressJS.      
+Programmation en HTML, CSS, Sass, Bash, JavaScript, React, NextJS, React Native, Nodejs, ExpressJS.  
 Éditions, modifications, retouches sur PhotoShop.
 
 ## Formation & Experience
 
-2022-2024      
-╘╤ 3W Academy ✕ Slickk       
-      ╘ Développement fullstack en alternance.         
-      
-2021  
-╘╤ Udemy  
-      ╘ NodeJS: Développer une API Rest avec MySQL.  
+2022-2024  
+╘╤ 3W Academy ✕ Slickk  
+      ╘ Développement fullstack en alternance.
 
 2021  
 ╘╤ Udemy  
-      ╘ Formation React Native, développement d'applications mobiles.  
+      ╘ NodeJS: Développer une API Rest avec MySQL.
+
+2021  
+╘╤ Udemy  
+      ╘ Formation React Native, développement d'applications mobiles.
 
 2021  
 ╘╤ THP: TheHackingProject  
       ╞Reconversion professionnelle en format Bootcamp.  
-      ╘Développeur fullstack.  
+      ╘Développeur fullstack.
 
 2017  
 ╘╤ Piscine de 42  
-      ╘ Les bases de la programmation en C. 
+      ╘ Les bases de la programmation en C.
 
 ## Intérêt
+
 Je bidouille de l'informatique depuis mon adolescence, demonter des ordinateurs à écrire des scripts, dès que j’ai une idée, je la teste.
 
 ## Infos
+
 [neka.dev](https://neka.dev/)  
-<a href="mailto:contact+github@neka.dev">contact@neka.dev</a>      
-Paris 18  
-___
+<a href="mailto:contact+github@neka.dev">contact@neka.dev</a>
+
+---
+
 Pour plus d'information n'hésitez pas à visiter [mon site](https://neka.dev/) ou m'[envoyer un mail](mailto:contact+github@neka.dev).
