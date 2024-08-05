@@ -47,9 +47,19 @@ nav > ul > li {
   font-size: 20px;
 }
 
+nav > ul > li > a {
+  align-content: center;
+  display: flex;
+}
+
 nav > ul > li > a:hover {
   opacity: 0.4;
   transition: 1s;
+}
+
+nav > ul > li > a > img {
+  width: 25px;
+  height: 25px;
 }
 
 /* Main */
@@ -198,7 +208,7 @@ footer > p {
 }
 
 /* Responsive */
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-width: 500px) {
   main {
     width: 300px !important;
     margin: 50px auto 10px auto !important;
@@ -210,7 +220,7 @@ footer > p {
   }
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   main {
     width: 400px;
     margin: 175px auto 175px auto;
