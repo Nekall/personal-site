@@ -54,7 +54,7 @@ nav > ul > li > a:hover {
 
 /* Main */
 main {
-  max-width: 50%;
+  width: 600px;
   margin: 100px auto 0 auto;
   font-size: 18px;
 }
@@ -87,8 +87,6 @@ h2 {
 }
 
 /* Skills */
-#skills {
-}
 #skills > div {
   display: flex;
 }
@@ -136,9 +134,6 @@ footer > p {
   text-align: center;
 }
 
-#projects-section {
-}
-
 #projects {
   display: grid;
   grid-auto-columns: 1fr;
@@ -164,10 +159,15 @@ footer > p {
   transition: 1s;
   opacity: 0.6;
   border-radius: 2px;
-  display: flex;
   padding: 10px 15px;
   text-align: start;
   align-items: center;
+  overflow: hidden;
+  display: flex;
+}
+
+#projects li button .logo_title {
+  display: flex;
 }
 
 #projects li button:hover {
@@ -179,4 +179,45 @@ footer > p {
   height: 65px;
   width: 65px;
   margin-right: 10px;
+}
+
+#projects .description {
+  display: none;
+}
+
+#open {
+  height: 300px !important;
+  align-items: flex-start !important;
+  display: block !important;
+  background-color: #151515 !important;
+  opacity: 1 !important;
+}
+
+#open .description {
+  display: block;
+}
+
+/* Responsive */
+@media only screen and (max-device-width: 500px) {
+  main {
+    width: 300px !important;
+    margin: 50px auto 10px auto !important;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  main {
+    width: 400px;
+    margin: 175px auto 175px auto;
+    font-size: 17px;
+  }
+
+  #projects {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 2fr;
+    gap: 10px 10px;
+    padding: 0;
+  }
 }
