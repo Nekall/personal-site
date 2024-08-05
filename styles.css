@@ -26,6 +26,11 @@ nav {
   display: flex;
   justify-content: space-between;
   font-weight: bolder;
+  background-color: #151515;
+  border-radius: 2px;
+  width: 600px;
+  margin: 10px auto;
+  border: solid 1px #151515;
 }
 
 nav > h1 {
@@ -209,6 +214,10 @@ footer > p {
 
 /* Responsive */
 @media only screen and (max-width: 500px) {
+  nav {
+    width: 95% !important;
+  }
+
   main {
     width: 300px !important;
     margin: 50px auto 10px auto !important;
@@ -221,6 +230,10 @@ footer > p {
 }
 
 @media only screen and (max-width: 768px) {
+  nav {
+    width: 400px;
+  }
+
   main {
     width: 400px;
     margin: 175px auto 175px auto;
