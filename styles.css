@@ -1,10 +1,20 @@
+@font-face {
+  font-family: "Noto";
+  src: url("./public/fonts/NotoSansDisplay-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "AntonSC";
+  src: url("./public/fonts/AntonSC-Regular.ttf");
+}
+
 body {
   background-color: #000;
   color: #fff;
   margin: 0;
-  height: 100vh;
   cursor: crosshair;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto", Arial, Helvetica, sans-serif;
+  padding: 10px 0;
 }
 
 /* Init spacing */
@@ -26,11 +36,12 @@ nav {
   display: flex;
   justify-content: space-between;
   font-weight: bolder;
-  background-color: #151515;
-  border-radius: 2px;
+  background-color: #222222;
+  border-radius: 8px;
   width: 600px;
-  margin: 10px auto;
+  margin: 0 auto;
   border: solid 1px #151515;
+  filter: drop-shadow(0 5px 20px rgba(255, 255, 255, 0.3));
 }
 
 nav > h1 {
@@ -75,10 +86,22 @@ main {
 }
 
 h2 {
-  color: #999;
-  text-decoration: underline;
   font-weight: lighter;
   padding-bottom: 10px;
+  font-family: "AntonSC", Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  position: relative;
+  height: 3px;
+  width: 100%;
+  margin-top: -10px;
+  z-index: -1;
 }
 
 /* Description */
@@ -143,12 +166,6 @@ footer > p {
 }
 
 /* Projects Page */
-#title_projects {
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-}
-
 #projects {
   display: grid;
   grid-auto-columns: 1fr;
@@ -163,22 +180,19 @@ footer > p {
 
 #projects li button {
   width: 100%;
-  border-radius: 0;
   border: none;
   margin: 0;
-  padding: 0;
   cursor: pointer;
   color: #fff;
-  height: 80px;
-  background-color: #000;
   transition: 1s;
-  opacity: 0.6;
   border-radius: 2px;
   padding: 10px 15px;
   text-align: start;
-  align-items: center;
   overflow: hidden;
+  height: 80px;
   display: flex;
+  background-color: #000;
+  opacity: 0.6;
 }
 
 #projects li button .logo_title {
@@ -186,7 +200,7 @@ footer > p {
 }
 
 #projects li button:hover {
-  background-color: #151515;
+  background-color: #222222;
   opacity: 1;
 }
 
@@ -202,8 +216,7 @@ footer > p {
 
 #open {
   height: 300px !important;
-  align-items: flex-start !important;
-  display: block !important;
+  display: inline-grid !important;
   background-color: #151515 !important;
   opacity: 1 !important;
 }
