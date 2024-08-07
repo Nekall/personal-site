@@ -118,6 +118,10 @@ h2::after {
   padding-bottom: 10px;
 }
 
+#experiencies > div > details {
+  margin-bottom: 10px;
+}
+
 #experiencies > div > details > summary {
   -webkit-user-select: none;
   -moz-user-select: none;
