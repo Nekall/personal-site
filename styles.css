@@ -108,6 +108,7 @@ h2::after {
 #description {
   margin-top: 20px;
 }
+
 #description > p {
   margin: 10px 0;
 }
@@ -222,7 +223,27 @@ footer > p {
 }
 
 #open .description {
-  display: block;
+  display: grid;
+}
+
+#open .description p {
+  margin-bottom: 10px;
+}
+
+#open .description a {
+  margin-right: 10px;
+  opacity: 0.6;
+}
+
+#open .description a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+#open .description a img {
+  width: 15px;
+  height: 15px;
+  margin: 0;
 }
 
 /* Responsive */
