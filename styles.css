@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Noto";
-  src: url("./public/fonts/NotoSansDisplay-VariableFont_wdth\,wght.ttf");
+  src: url("./assets/fonts/NotoSansDisplay-VariableFont_wdth\,wght.ttf");
 }
 
 @font-face {
   font-family: "AntonSC";
-  src: url("./public/fonts/AntonSC-Regular.ttf");
+  src: url("./assets/fonts/AntonSC-Regular.ttf");
 }
 
 body {
